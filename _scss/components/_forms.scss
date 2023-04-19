@@ -1,0 +1,58 @@
+/* ====================== FORMS ========================== */
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1.5em;
+  width: 100%;
+
+  div {
+    position: relative;
+      
+    }
+
+    label{
+      font-size: 1.2em;
+      letter-spacing: .1em;
+      font-weight: 600;
+      color: rgba(44, 44, 44, 0.932);
+    }
+
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    legend {
+      font-size: 1.9em;
+      margin-bottom: 1.5em;
+      font-weight: 600;
+      color: rgba(34, 34, 34, 0.932);
+    }
+  }
+
+  .form__control {
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 1px rgba(41, 76, 146, 0.336);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 25px;
+    outline: none;
+    padding: 1.3em;
+    position: relative;
+    width: 100%;
+
+    &:focus {
+      background-color: rgba(35, 100, 197, 5%);
+    }
+  }
+
+  input::placeholder,
+  textarea::placeholder{
+      color:rgba(55, 97, 211, 0.705);
+
+    
+  }
+}

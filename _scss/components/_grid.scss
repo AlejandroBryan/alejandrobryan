@@ -1,0 +1,208 @@
+/* ====================== GRID AND FLEXBOX LAYOUT ========================== */
+
+.container {
+  min-height: 60%;
+  min-width: 320px;
+  padding: 0 10px;
+  overflow: auto;
+  width: 100%;
+}
+
+.card {
+	flex-basis: 100%;
+}
+
+pre{
+  background-color: rgb(14, 13, 13);
+  border-radius: $rounded;
+  color: $white-color;
+}
+/* ======== GRID ========== */
+
+@supports (display: grid) {
+
+  .grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    margin: 0;
+
+    .card__body {
+        color: $white-color;
+        position: absolute;
+        padding: 10px;
+        top: 90px;  
+        left: 0; 
+        right: 0;
+        bottom: 0;
+
+        p{
+          color: $white-color;
+        }
+
+    }
+   
+
+    .grid__item {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      background-color: rgba(238, 234, 234, 91.8%);
+      margin: 0;
+      height: 300px;
+      width: auto;
+
+    
+
+      .card__title{ 
+        z-index: 2;
+        position: absolute;
+         left: 0;
+          top: 10px;
+        align-self: flex-start; 
+        padding: 0.5rem;
+        color: rgba(255,255,255,.90); 
+        font-size: 2rem;
+        line-height: 1;font-weight: 600; } 
+    }
+
+      .card__thumbnail{
+        position: relative;
+        overflow: hidden;  
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        width: 100%; 
+        height: 100%;
+
+        img{
+          height: 100%;
+        }
+
+      &:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+      }
+    }
+  }
+}
+
+/* ======== FLEXBOX ========== */
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+[class^='col'] {
+  border-radius: 5px;
+  flex-basis: 100%;
+  margin-top: 10px;
+  min-height: 25px;
+  padding: 10px;
+}
+
+/* ====================  BREAK POINTS =================== */
+
+@media all and (min-width: $md) {
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    .card__body {
+      color: $white-color;
+      position: absolute;
+      padding: 10px;
+      top: 70px;  
+      left: 0; 
+      right: 0;
+      bottom: 0;
+
+  }
+  }
+}
+
+@media all and (min-width: $xl) {
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: $md) {
+
+  .container {
+    display: block;
+    margin: 2em auto;
+    padding: 0;
+    width: 70%;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  [class^='col'] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  [class^='col'] + [class^='col'] {
+    margin-left: 10px;
+  }
+
+  .col__1 {
+    flex-basis: 8.33%;
+  }
+
+  .col__2 {
+    flex-basis: 16.67%;
+  }
+
+  .col__3 {
+    flex-basis: 25%;
+  }
+
+  .col__4 {
+    flex-basis: 33.33%;
+  }
+
+  .col__5 {
+    flex-basis: 41.67%;
+  }
+
+  .col__6 {
+    flex-basis: 50%;
+  }
+
+  .col__7 {
+    flex-basis: 58.33%;
+  }
+
+  .col__8 {
+    flex-basis: 66.67%;
+  }
+
+  .col__9 {
+    flex-basis: 75%;
+  }
+
+  .col__10 {
+    flex-basis: 83.33%;
+  }
+
+  .col__11 {
+    flex-basis: 91.67%;
+  }
+
+  .col__12 {
+    flex-basis: 100%;
+  }
+
+  .under__construction__icon {
+    height: 600px;
+    width: 100%;
+  }
+}

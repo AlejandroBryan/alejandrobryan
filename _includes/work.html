@@ -1,0 +1,24 @@
+<section>
+    <div class="grid">
+      {% for work in site.data.settings.works %}
+
+      <div class="grid__item rounded">
+        <h2 class="card__title mb-1">{{ work.name }}</h2>
+        <figure class="card__thumbnail">
+          <img src="{{site.github.url}}/assets/images/works/{{work.url}}/thumbnail.png" alt="">
+        </figure>
+
+        <div class="card__body">
+          <p>
+            Within this project, I was responsible for the frontend. It’s written in React.js.
+            </p> 
+            <a href="{{ site.github.url }}/works/{{ work.url }}" class="btn secondary rounded w-100">See More</a>
+
+        </div>
+        
+    
+      
+     </div>
+      {% endfor %}
+    </div>
+  </section>

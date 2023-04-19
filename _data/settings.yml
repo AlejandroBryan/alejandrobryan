@@ -1,0 +1,23 @@
+#-------------------------------
+# Projects Section
+
+works:
+- {name: 'Pokedex',   url: 'work-1'}
+- {name: 'My-flix',   url: 'work-2'}
+- {name: 'Pokedex',   url: 'work-3'}
+- {name: 'My-flix',   url: 'work-4'}
+- {name: 'Pokedex',   url: 'work-5'}
+- {name: 'My-flix',   url: 'work-6'}
+- {name: 'Pokedex',   url: 'work-7'}
+- {name: 'My-flix',   url: 'work-8'}
+
+
+#-------------------------------
+# General Site Settings
+
+menu:
+- {name: 'Home', url: ''}
+- {name: 'About',    url: 'about'}
+- {name: 'Works', url: 'works'}
+- {name: 'Blog',     url: 'blog'}
+- {name: 'Contact',  url: 'contact'}

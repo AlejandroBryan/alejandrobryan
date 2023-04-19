@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% if page.title == "Home" %}
+          {{ site.title }}
+          {% else %}
+          {{ page.title }} | {{ site.title }}
+        {% endif %}
+    </title>
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+</head>
+<body>
+  <header class="mb-3 header__section">
+    <div class="container">
+        <nav class="nav">
+
+                <a class="brand__item" href="/" >
+                    <img src="/assets/images/logo.svg" alt="alejandro's home page logo" class="logo">
+                </a>
+            <ul class="navbar" role="menubar">
+
+                {% for item in site.data.settings.menu %}
+
+                <li class="nav__link" role="presentation">
+                    <a href="{{ site.github.url }}/{{ item.url }}" role="menuitem" class="item">{{ item.name }}</a>
+                </li>
+               {% endfor %}
+
+                 <li class="toggle__button">
+                    <span class="bars"></span> 
+                  </li>
+        
+            </ul>  
+               
+        </nav>
+    </div>     
+</header>

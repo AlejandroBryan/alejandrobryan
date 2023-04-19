@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div id="modal" class="modal">
+    <div class="modal__content text__danger">
+        <h3 class="modal__title"></h3>
+        <span class="close__button">&times;</span>
+        <div class="modal__body ">
+        </div>
+    </div>
+</div>
+
+
+<div class="row mb-2">
+    <div class="col-8">
+        <h1>Contact Me</h1>
+    </div>
+</div>
+
+
+
+<div class="row">
+<div class="col-8">
+    <form action="#" class="contact__form" id="contact__form">
+        <fieldset>
+            <legend> Let me a message behind</legend>
+            <div>
+                <label for="name">Name</label>
+                <input class="form__control" type="text" name="name" placeholder="John Doe*" id="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input class="form__control" type="email" name="email"  placeholder="johndoe@zmail.com*" id="email" required>
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea class="form__control"  name="message" id="message" cols="30" rows="10" placeholder="Message here...*" required></textarea>
+                
+            </div>
+            <div>
+                <button class="btn primary rounded-l large mt-2" type="submit">
+                    Send ur message
+                </button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</div>
+
