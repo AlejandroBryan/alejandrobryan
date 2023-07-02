@@ -22,9 +22,19 @@ menu:
 - {name: 'Blog',     url: 'blog'}
 - {name: 'Contact',  url: 'contact'}
 
-#stacks
+#Stacks
+technologies:
+  - pokedex:
+      - html
+      - css 
+      - javascript
+      - bootstrap
+  - portfolio:
+      [html, css, javascript, jekyll]
+  - my-flixx:
+      [nodejs express jwt mongod ]        
+    
+     
 
-Pokedex:
-  html
-  css
-  javascript
+    
+ 

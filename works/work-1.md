@@ -1,6 +1,14 @@
 ---
 layout: post
-title: 'Personal Portfolio'
+title: 'portfolio'
+stacks:
+  - html
+  - css 
+  - javascript
+  - jekyll
+  - sass
+  - ruby
+
 ---
 
 {% include image.html url="/" image="/works/work-1/portfolio.png" %}

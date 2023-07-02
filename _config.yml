@@ -17,7 +17,6 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
 title: Alejandro Bryan
 email: alejandrobryan023@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -35,6 +34,8 @@ sass:
 #theme: minima
 plugins:
   - jekyll-feed
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

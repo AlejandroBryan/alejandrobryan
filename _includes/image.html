@@ -1,14 +1,25 @@
 <div class="image__container">
-    <a href="{{ include.url }}" target="_blank">
-      <img src="{{ site.github.url }}/assets/images/{{ include.image }}" alt="{{site.title}}" class="image rounded-l">
+   <a href="{{ include.url }}" target="_blank">
+      <img
+         src="{{ site.github.url }}/assets/images/{{ include.image }}"
+         alt="{{page.title}} {{site.title}}"
+         class="image rounded-l"
+      />
       <div class="overlay">
-        <div class="text">
-          {% if include.text %}
-            {{ include.text }} <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          {% else %}
-            View Demo <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          {% endif %}
-        </div>
+         <div class="text">
+            {% if include.text %} {{ include.text }}
+            <i class="fa fa-arrow-right" aria-hidden="true"></i> {% else %} View
+            Demo <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            {% endif %}
+         </div>
       </div>
-    </a>
-  </div>
+   </a>
+</div>
+
+<div>
+   {% for stack in page.stacks %}
+
+   <span class="badge {{stack}}" > {{ stack }} </span>
+
+   {% endfor %}
+</div>
