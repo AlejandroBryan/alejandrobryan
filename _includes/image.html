@@ -1,6 +1,6 @@
-<div class="image-container">
+<div class="image__container">
     <a href="{{ include.url }}" target="_blank">
-      <img src="{{ site.github.url }}/assets/images/{{ include.image }}" alt="Avatar" class="image rounded-l">
+      <img src="{{ site.github.url }}/assets/images/{{ include.image }}" alt="{{site.title}}" class="image rounded-l">
       <div class="overlay">
         <div class="text">
           {% if include.text %}
@@ -11,4 +11,8 @@
         </div>
       </div>
     </a>
+
+    {% for item in site.data.settings.stacks %}
+    <span>{{item[page.title]}}</span>
+    {% endfor %}
   </div>
