@@ -3,7 +3,7 @@
       <img
          src="{{ site.github.url }}/assets/images/{{ include.image }}"
          alt="{{page.title}} {{site.title}}"
-         class="image rounded-l"
+         class="image rounded"
       />
       <div class="overlay">
          <div class="text">
@@ -13,5 +13,13 @@
             {% endif %}
          </div>
       </div>
-    </a>
-  </div>
+   </a>
+</div>
+
+<div>
+   {% for stack in page.stacks %}
+
+   <span class="badge {{stack}}" > {{ stack }} </span>
+
+   {% endfor %}
+</div>

@@ -2,16 +2,19 @@
 
 .btn {
   @include button-display;
-
   border: 0;
   font-weight: $font-large;
   padding: .3em 2em;
   letter-spacing: .1em;
   text-transform: uppercase;
+  text-align: center;
 
   &:hover {
     opacity: 0.8;
   }
+}
+.btn__icons{
+  @include button-display;
 }
 .large{
   padding: 1em 3em;
