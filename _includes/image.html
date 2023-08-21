@@ -6,17 +6,25 @@
          class="image rounded"
       />
       <div class="overlay">
-         <div class="text">
+         <div class="text btn primary rounded">
             {% if include.text %} {{ include.text }}
-            <i class="fa fa-arrow-right" aria-hidden="true"></i> {% else %} View
-            Demo <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i> {% else %} View
+            Demo <i class="fas fa-arrow-right" aria-hidden="true"></i>
             {% endif %}
          </div>
       </div>
    </a>
 </div>
+   <a href="{{page.source-code}}" target="_blank">
+      <i class="fa-brands fa-github" style="width: 32px;" aria-hidden="true"></i>
+      Source's code
+   </a>
 
 <div>
+   <div>
+      <i class="fa-solid fa-screwdriver-wrench" style="width: 32px;"></i>
+   </div>
+   
    {% for stack in page.stacks %}
 
    <span class="badge {{stack}}" > {{ stack }} </span>

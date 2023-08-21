@@ -4,12 +4,24 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+         name="keywords"
+         content="portfolio, blog, web developer, web development, Alejandro Bryan, Frontend, Backend, full-stack"
+      />
+      <meta name="author" content="Alejandro Bryan" />
+      <meta name="publisher" content="Alejandro Bryan" />
+      <meta name="copyright" content="Alejandro Bryan" />
+      <meta
+         name="description"
+         content="Junior Full Stack Web Developer based in southern Germany, currently advancing skills through CareerFoundry's full-stack web development course. Proficient in HTML, CSS, JavaScript, and diverse web technologies. Excited to collaborate with experienced developers, foster learning, and contribute to the web development landscape."
+      />
+      <meta name="page-topic" content="Media" />
+      <meta name="page-type" content="Blogging" />
+      <meta name="audience" content="Everyone" />
+      <meta name="robots" content="index, follow" />
       <title>
-        {% if page.title == "Home" %}
-            {{ site.title }}
-          {% else %}
-           {{ page.title }} | {{ site.title }}
-        {% endif %}
+         {% if page.title == "Home" %} {{ site.title }} {% else %} {{ page.title
+         }} | {{ site.title }} {% endif %}
       </title>
       <link rel="icon" href="/assets/images/favicon.ico" type="image/png" />
       <link
@@ -18,7 +30,7 @@
       />
       <link
          rel="stylesheet"
-         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       />
       <link rel="stylesheet" href="/assets/css/main.css" />
    </head>

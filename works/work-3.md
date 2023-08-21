@@ -2,6 +2,7 @@
 layout: post
 title: 'my-flixx'
 github-name: my-flixx
+source-code: https://github.com/AlejandroBryan/my-flixx
 stacks:
   - node
   - mongodb

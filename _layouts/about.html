@@ -1,71 +1,54 @@
 ---
 layout: default
 ---
-    <h1 class="mb-1">About me</h1>
 
-    <p>
-        I am a student at Carrerfoundry's Fullstack Web Developer program, so far I've been enjoying the Intro To Web development lesson  which consist of learning the semantic structure of the websites with Hyper Text Markup language (HTML) along with Cascading Style Sheet (Css) in order to build good looking and responsive layout and Why not? adding live and interaction with the most popular programming languages around the web JavaScript.
+<h1 class="mb-1">About me</h1>
 
-       
-    </p>
-    <p>
-        Hello! My name is [Your Name], and I'm an aspiring junior web developer. I'm passionate about coding and have a strong background in HTML, CSS, and JavaScript. I'm excited to use my skills to design and build websites that are both visually and functionally appealing. I'm eager to learn and grow my skills even more, and I'm looking forward to this opportunity to be part of a great team. 
-    </p>
+<p>
+   I am a full-stack developer, a father of two, and a husband. These aspects
+   provide a well-rounded perspective on my identity. Originally from the
+   Dominican Republic, I spent my formative years there before moving to
+   Germany, "Na Servus" in 2018. Since then, I've engaged with various fields,
+   collecting diverse experiences that have enriched my outlook.
+</p>
+<p>
+   As a full-stack developer, my passion lies in finding the synergy between
+   creativity and technical expertise. This portfolio documents my journey,
+   highlighting my growth and progress over time. Each project encapsulates a
+   phase of my development, from crafting seamless user interfaces to
+   architecting complex back-end systems. Thank you for considering my
+   portfolio. Whether you're interested in my technological endeavors, my family
+   dynamics or enjoy personal narratives, I appreciate your time. Please contact
+   me, especially if you see potential for collaboration or want to explore my
+   journey as a full-stack developer.
+</p>
+<a
+href="/assets/files/alejandro_cv_en.pdf"
+class="btn primary rounded mb__4"
+download
+>Download my CV</a
+>
 
-    <p>Things that I enjoy doing are:</p>
+<h2>Skills</h2>
+<section class="ml__1 mb__1">
+   <h3 class="sub__heading mt__1">Frontend</h3>
+   {% for stack in page.frontend %}
 
-    <ul>
-        <li>Front-end development</li>
-        <li>Back-end development</li>
-        <li>Test driven development</li>
-        <li>Climbing</li>
-      </ul>
+   <span class="badge {{stack}}"> {{ stack }} </span>
 
-      <a href="#" class="btn primary rounded mt-1" download>Download my CV</a>
+   {% endfor %}
 
-    <div class="row mt-2">
-        <div class="col-12 ">
-            <table>
-                <caption>My background</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Years</th>
-                        <th scope="col">Role</th>
-                        <th scope="col">Description</th>
-                    </tr>
+   <h3 class="sub__heading mt__1">Backend</h3>
+   {% for stack in page.backend %}
 
-                </thead>
-                
-                <tbody>
-                    <tr>
-                        <td>2009 to 2015</td>
-                        <td>Sculptor</td>
-                        <td>
-                            Running my own small business while enjoying the creative and pleasureful world of fine arts, it was great time to never forget 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2016 to 2018</td>
-                        <td>Entertainer</td>
-                        <td>
-                            I've used to entertain the guest through small talking, dancing and organizing the     activities the whole day in order to them busy. 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2018 to Now</td>
-                        <td>Service Technician</td>
-                        <td>
-                            Giving maintenance and replacing broken parts of cars, it's the most recent jobs that i've been doing and loving so far.
-                        </td>
-                    </tr>
+   <span class="badge {{stack}}"> {{ stack }} </span>
 
-                </tbody>
-                
-            </table>
+   {% endfor %}
+   <h4 class="sub__heading mt__1">Tools</h4>
+   {% for stack in page.tools %}
 
+   <span class="badge {{stack}}"> {{ stack }} </span>
 
-        </div>
-    </div>
+   {% endfor %}
+</section>
 
-    
-    
