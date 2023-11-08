@@ -1,0 +1,25 @@
+{
+  "name": "alex-portfolio",
+  "version": "1.0.0",
+  "description": "[alejandrobryan.com](https://alejandrobryan.com)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint '_scss/**/*.scss'",
+    "format": "stylelint '_scss/**/*.scss' --fix",
+    "deploy": "git add . && git commit -a -m 'add the case study and fully new integrations' &&  git push -u origin master"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^15.11.0",
+    "stylelint-config-recess-order": "^4.3.0",
+    "stylelint-config-recommended-scss": "^13.1.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-scss": "^5.3.0"
+  },
+  "dependencies": {
+    "hex-to-rgba": "^2.0.1"
+  }
+}

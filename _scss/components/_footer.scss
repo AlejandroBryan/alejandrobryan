@@ -1,27 +1,26 @@
 // ====================== FOOTER ==========================
 
 .footer {
-  padding: 12px 10px;
-  margin-bottom: 0;
-  margin-top: 25px;
   width: 100%;
+  padding: 12px 10px;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
 .footer__nav {
-
   li {
     display: inline-block;
 
     .social {
       @include hover-effect-inverse;
 
-      background-size: 30px 30px;
       display: inline-block;
-      height: 30px;
+      width: 45px;
+      height: 45px;
       margin-left: 5px;
       text-indent: -9999px;
+      background-size: 45px 45px;
       transition: all 0.7s;
-      width: 30px;
     }
   }
 }

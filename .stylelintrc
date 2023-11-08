@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-recess-order"
+  ],
+  "plugins": [
+    "stylelint-scss"
+    
+  ],
+  "rules": {
+
+    "selector-class-pattern": null,
+    "no-invalid-position-at-import-rule": true,
+    "import-notation": "string",
+    "keyframes-name-pattern":  null,
+    "declaration-block-single-line-max-declarations": null
+
+
+  }    
+}

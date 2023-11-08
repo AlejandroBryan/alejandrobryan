@@ -1,40 +1,39 @@
-/******modal style****************/
-/******modal style **************/
+/******  modal style  ****************/
+
+/****** modal style **************/
 
 .modal {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 10;
     display: none;
-    position: fixed; 
-    z-index: 10; 
-    padding-top: 100px; 
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%; 
+    padding-top: 100px; 
     overflow: auto; 
-    background-color: rgba(124, 123, 123, 0.753); 
+    background-color: #7c7b7bc0; 
   }
 
   .modal__content {
     position: relative;
-    background-color: #ffffff;
-    margin: auto;
-    padding: 10px 30px;
-    text-align: left;
-    border: 1px solid rgba(136, 136, 136, 0.87);
-    border-radius: 12px;
     width: 80%;
     min-height: 45%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animationTop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animationTop;
+    padding: 10px 30px;
+    margin: auto;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #888888de;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 #0003,0 6px 20px 0 #00000030;
+    animation-name: animation_top;
     animation-duration: 0.4s
   }
 
 
   .modal__title{
     margin: 30px 0;
-    border-bottom: 1px solid rgb(58, 55, 55);
+    border-bottom: 1px solid #3a3737;
   }
     
   .modal__body {
@@ -43,7 +42,6 @@
   }
 
   @media all and (min-width: $xl) {
-
     .modal__content{
       width: 70%;
     }
@@ -51,14 +49,11 @@
   }
   
   /* Add Animation */
-@-webkit-keyframes animationTop {
+@keyframes animation_top {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
   }
   
-  @keyframes animationTop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-  }
+
 
   

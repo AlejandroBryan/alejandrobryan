@@ -23,10 +23,10 @@ layout: default
    journey as a full-stack developer.
 </p>
 <a
-href="/assets/files/alejandro_cv_en.pdf"
-class="btn primary rounded mb__4"
-download
->Download my CV</a
+   href="/assets/files/alejandro_cv_en.pdf"
+   class="btn primary rounded mb__4"
+   download
+   >Download my CV</a
 >
 
 <h2>Skills</h2>
@@ -34,21 +34,27 @@ download
    <h3 class="sub__heading mt__1">Frontend</h3>
    {% for stack in page.frontend %}
 
-   <span class="badge {{stack}}"> {{ stack }} </span>
+   <span class="badge {{stack}}">
+      <i class="fa-brands fa-{{stack}}"> {{ stack }} </i>
+   </span>
 
    {% endfor %}
 
    <h3 class="sub__heading mt__1">Backend</h3>
    {% for stack in page.backend %}
 
-   <span class="badge {{stack}}"> {{ stack }} </span>
+   <span class="badge {{stack}}">
+      <i class="fa-brands fa-{{stack}}"> {{ stack }} </i>
+   </span>
 
    {% endfor %}
+   
    <h4 class="sub__heading mt__1">Tools</h4>
    {% for stack in page.tools %}
 
-   <span class="badge {{stack}}"> {{ stack }} </span>
+   <span class="badge {{stack}}">
+      <i class="fa-brands fa-{{stack}}"> {{ stack }} </i>
+   </span>
 
    {% endfor %}
 </section>
-

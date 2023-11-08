@@ -2,13 +2,13 @@
 # Projects Section
 
 works:
-- {name: 'portfolio',   url: 'work-1'}
-- {name: 'pokedex',   url: 'work-2'}
-- {name: 'my-flixx',   url: 'work-3'}
-- {name: 'my-flixx-client',   url: 'work-4'}
-- {name: 'meet',   url: 'work-5'}
-- {name: 'chat-app',   url: 'work-6'}
-- {name: 'my-flixx-client-angular',   url: 'work-7'}
+- {name: 'portfolio',   url: 'portfolio'}
+- {name: 'pokedex',   url: 'pokedex'}
+- {name: 'my-flixx',   url: 'my-flixx'}
+- {name: 'my-flixx-client',   url: 'my-flixx-client'}
+- {name: 'meet',   url: 'meet'}
+- {name: 'chat-app',   url: 'chat-app'}
+- {name: 'my-flixx-client-angular',   url: 'my-flixx-client-angular'}
 
 
 

@@ -1,0 +1,31 @@
+.code-header {
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .copy-code-button {
+    position: relative;
+    top: 20px !important;
+    z-index: 100;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 4px;
+    align-items: center;
+    padding: 4px 8px;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #2a1c0d;
+    cursor: pointer;
+    border: none;
+
+  }
+
+  pre{
+    position: relative;
+    padding: 6px 12px;
+    margin-bottom: 12px;
+    color: $white-color;
+    background-color: #121149f2;
+    border-radius: $rounded;
+  }

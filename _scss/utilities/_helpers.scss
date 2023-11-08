@@ -17,6 +17,7 @@
 .mb__4 {
   margin-bottom: 1.9em;
 }
+
 .mt__1 {
   margin-top: 1.3em;
 }
@@ -25,7 +26,7 @@
   margin-top: 1.6em;
 }
 
-.mt-3 {
+.mt__3 {
   margin-top: 1.9em;
 }
 
@@ -37,9 +38,10 @@
   margin-right: 0.8em;
 }
 
-.ml__1 {
+.ml__l {
   margin-left: 0.8em;
 }
+
 /* =============== PADDINGS ================= */
 
 .pb-1 {
@@ -76,10 +78,11 @@
 
 .label {
   @include label-animation-effect;
-  background-color: rgba(25, 83, 158, 85.6%);
-  color: $white-color;
-  padding: 5px;
+
   width: 20px;
+  padding: 5px;
+  color: $white-color;
+  background-color: #19539eda;
 }
 
 .rounded {
@@ -93,6 +96,7 @@
 .rounded-l {
   border-radius: $rounded-l;
 }
+
 .circle {
   border-radius: $circle;
 }
@@ -108,4 +112,13 @@
 
 .text__start {
   text-align: left;
+}
+
+/******  media queries  *****/
+
+/******  media queries  *****/
+@media (min-width: $md) {
+  .ml__md {
+    margin-left: 1.8em;
+  }
 }

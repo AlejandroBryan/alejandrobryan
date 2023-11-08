@@ -32,7 +32,16 @@ github_username:  AlejandroBryan
 sass:
   sass_dir: _scss
 # Build settings
+markdown: kramdown # The Markdown processor to use (e.g., kramdown, redcarpet)
+kramdown:
+  input: GFM # Use GitHub Flavored Markdown
+  auto_ids: true # Generate automatic header IDs
+  syntax_highlighter: rouge # Syntax highlighter to use (e.g., rouge, pygments)
+  toc_levels: 1..6 # Table of contents levels (e.g., 1 to 6)
+
 #theme: minima
+
+
 plugins:
   - jekyll-feed
 
@@ -46,14 +55,14 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

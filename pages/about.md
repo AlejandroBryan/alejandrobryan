@@ -4,8 +4,8 @@ title: About
 permalink: /about
 
 frontend:
-   - html
-   - css
+   - html5
+   - css3
    - javascript
    - sass
    - markdown
@@ -19,7 +19,7 @@ backend:
    - aws
    - heroku
    - express
-   - postgresSQL
+   - postgressql
    - jwt
 
 tools:
@@ -28,5 +28,6 @@ tools:
    - babel
    - webpack
    - figma
+   - postman
    
 ---

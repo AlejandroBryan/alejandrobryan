@@ -2,31 +2,33 @@
 
 .header__section {
   display: block;
-  margin-top: 0;
   width: $full-width;
+  margin-top: 0;
 
   .nav {
-    padding: 12px;
     position: relative;
+    padding: 12px;
   }
 }
 
 .navbar {
   display: flex;
   flex-direction: column;
-  margin-top: 4em;
   width: $full-width;
+  margin-top: 4em; 
+  list-style-type: none;
+  background-color: #fdfdfd;
   border-radius: $rounded;
-  background-color: rgb(253, 253, 253); 
+ 
 
   .nav__link {
     display: none;
-    font-size: 1.4em;
-    list-style: none;
-    padding: 12px 6px;
-    transition: all 0.7s;
     width: $full-width;
-  
+    padding: 12px 6px;
+    font-size: 1.4em;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.7s;
   }
 
   .active {
@@ -36,16 +38,16 @@
 
   .item {
     display: block;
-    font-family: Poppins;
-    font-weight: 700;
-    padding: 6px;
     width: $full-width;
+    padding: 6px;
+    font-family: Poppins, sans-serif; 
+    font-weight: 500;
     letter-spacing: .5px;
     border-radius: $rounded;
     transition: 
     background-color .2s ease-in-out, 
     color .2s ease-in-out;
-
+    
 
     &:hover {
       color: $white-color;
@@ -66,11 +68,11 @@
 // === LOGO ===
 
 .brand__item {
+  position: absolute;
+  top: 6px;
   left: 0;
   margin-right: auto;
   outline: none;
-  position: absolute;
-  top: 6px;
 
   .logo {
     height: 65px;
@@ -82,33 +84,37 @@
 // === HAMBURGER MENU ===
 
 .toggle__button {
-  cursor: pointer;
-  margin: 0 10px;
-  order: 1;
   position: absolute;
-  right: 0;
   top: 16px;
+  right: 0;
   z-index: 10;
+  order: 1;
+  margin: 0 10px;
+  cursor: pointer;
+
+  li{
+    text-decoration: none;
+  }
 }
 
 .bars {
-  background: rgba(70, 68, 68, 0.671);
-  display: inline-block;
-  height: 3px;
   position: relative;
-  transition: all 0.5s ease-in-out;
+  display: inline-block;
   width: 35%;
   width: 1.7em;
+  height: 3px;
+  background: #454545ab;
+  transition: all 0.5s ease-in-out;
 
   &::before,
   &::after {
-    background: rgba(66, 60, 60, 0.671);
-    content: '';
-    display: block;
-    height: 100%;
     position: absolute;
-    transition: all 0.5s ease-in-out;
+    display: block;
     width: 100%;
+    height: 100%;
+    content: '';
+    background: #423c3cab;
+    transition: all 0.5s ease-in-out;
   }
 
   &::before {
@@ -137,7 +143,6 @@
 // === HAMBURGER MENU ===
 
 @media (min-width: $md) {
-
   .toggle__button {
     display: none;
   }
@@ -156,15 +161,15 @@
 
   .navbar {
     flex-direction: row !important;
-    margin-left: auto;
-    margin-top: 16px;
     width: auto;
+    margin-top: 16px;
+    margin-left: auto;
     background-color: transparent;
 
     .nav__link {
       display: inline-block;
-      padding: 0;
       width: auto;
+      padding: 0;
 
       .item {
         padding: 6px;

@@ -9,32 +9,47 @@
   .success{
     background-color: $success;
   }
-  
+
+  .warning{
+    background-color: $warning;
+  }
+
+  .info{
+    background-color: $info;
+  }
+
   .text__success{
     color: $success;
   }
 
-  .html{
-    background-color: $html;
+  .html5{
+    background-color: $html5;
   }
+
   .sass{
     background-color: $sass;
   }
-  .css{
-    background-color: $css;
+
+  .css3{
+    background-color: $css3;
   }
+
   .javascript{
     background-color: $javascript;
   }
+
   .jquery{
     background-color: $jquery;
   }
+
   .ruby{
     background-color: $ruby;
   }
+
   .bootstrap{
     background-color: $bootstrap;
   }
+
   .jekyll{
     background-color: $jekyll;
   }
@@ -46,12 +61,15 @@
   .webpack{
     background-color: $webpack;
   }
+
   .eslint{
     background-color: #6358D4;
   }
+
   .npm{
     background-color: $npm;
   }
+
   .prettier{
     background-color: $prettier;
   }
@@ -59,21 +77,79 @@
   .react{
     background-color: $react;
   }
+
   .angular{
     background-color: $angular;
   }
+
   .heroku{
     background-color: $heroku;
   }
+
   .mongodb{
     background-color: $mongodb;
   }
+
   .node{
     background-color: $node;
   }
+
  .jwt{
   background-color: $jwt;
  }
+
  .aws{
   background-color: $aws;
  }
+
+ .postgressql{
+  background-color: $postgresql;
+ }
+
+ .express{
+  background-color: $express;
+ }
+
+ .markdown{
+  background-color: $markdown;
+ }
+
+ .figma{
+  background-color: $figma;
+ }
+
+ .postman{
+  background-color: $postman;
+ }
+
+ .parcel{
+  background-color: $parcel;
+ }
+
+ .jest-cucumber {
+	background-color: $jest-cucumber;
+}
+
+.gh-pages{
+  background-color: $gh-pages;
+}
+
+.recharts{
+  background-color: $recharts;
+}
+
+.momentjs{
+  background-color: $momentjs;
+}
+
+.puppeteer{
+  background-color: $puppeteer;
+}
+
+.bg__primary{
+  padding: 10px;
+  background-color: #dedef0d5;
+  border-radius: $rounded;
+  box-shadow: 0 2px 3px 0 #346de056;
+
+}

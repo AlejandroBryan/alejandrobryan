@@ -2,67 +2,181 @@
 
 svg,
 img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.bg__images{
+   width: 100%;
    height: 100%;
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: auto 100%
-
 }
 
-.not__found__icon{
-  width: 100%;
-  height: 350px;
+.bg__images {
+   height: 100%;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: auto 100%;
+}
 
+.not__found__icon {
+   width: 100%;
+   height: 350px;
 }
 
 .contact__icons {
-  border-radius: 50%;
-  height: 45px;
-  width: 45px;
-}
-.image__container {
-	margin-bottom: 20px;
-	position: relative;
-	width: $full-width;
-	&:hover {
-		.overlay {
-			opacity: 1;
-		}
-	}
-	.image {
-		display: block;
-		height: auto;
-		width: $full-width;
-	}
-	.overlay {
-		background-color: rgba(255, 255, 255, 0.05);
-		bottom: 0;
-		height: 100%;
-		left: 0;
-		opacity: 0;
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: $full-width;
-	}
-	.text {
-		-ms-transform: translate(-50%, -50%);
-		color: rgb(255, 255, 255);
-		font-size: 32px;
-		font-weight: 700;
-		left: 50%;
-		position: absolute;
-		top: 50%;
-		transform: translate(-50%, -50%);
-	}
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
 }
 
-.fa-github, .fa-screwdriver-wrench{
-	font-size: 36px;
+.image__container {
+   position: relative;
+   width: $full-width;
+   margin-bottom: 20px;
+
+   &:hover {
+      .overlay {
+         opacity: 1;
+      }
+   }
+
+   .image {
+      display: block;
+      width: $full-width;
+      height: auto;
+   }
+
+   .overlay {
+      position: absolute;
+      inset: 0;
+      width: $full-width;
+      height: 100%;
+      background-color: #ffffff0d;
+      opacity: 0;
+   }
+
+   .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+      transform: translate(-50%, -50%);
+   }
+}
+
+.fa-github,
+.fa-screwdriver-wrench {
+   font-size: 22px;
+}
+
+.gallery {
+   display: grid;
+   gap: 10px;
+   padding: 10px;
+   background: #676e6cc4;
+   background: linear-gradient(
+      90deg,
+      #9e9b9bd7 0%,
+      #bcbcc2d2 46%,
+      #45424675 100%
+   );
+   border-radius: $rounded;
+   column-count: 1;
+
+   & > a {
+      position: relative;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      margin: 0;
+      border: 1px solid #070707b9;
+
+      &:hover {
+         .overlay {
+            opacity: 1;
+         }
+      }
+
+      .overlay {
+         position: absolute;
+         inset: 0;
+         width: $full-width;
+         height: 100%;
+         background-color: #d8cfcf93;
+         opacity: 0;
+      }
+
+      .overlay-icon {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         font-size: 42px;
+         font-weight: 700;
+         color: #6e6b6bce;
+         transform: translate(-50%, -50%);
+      }
+   }
+}
+//========================= lightbox =========================
+.lb-data .lb-caption {
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 1em;
+}
+
+.lb-data .lb-number {
+   display: block;
+   padding-bottom: 1em;
+   clear: left;
+   font-size: 25px;
+   color: #999;
+}
+
+.lightboxOverlay {
+   background-color: #000;
+   opacity: 0.9;
+}
+
+@media (min-width: $md) {
+   .gallery {
+      grid-template-rows: masonry;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+      outline: invert;
+   }
+
+   .gallery > a {
+      display: grid;
+      grid-template-rows: 1fr auto;
+      margin: 0;
+	   
+	  img{
+		object-fit: cover;
+	  }
+
+      &:first-child {
+         grid-row: span 2;
+         grid-column: span 2;
+      }
+
+      &:nth-child(2) {
+         grid-column: span 2;
+      }
+
+      &:nth-child(3) {
+         grid-column: span 2;
+      }
+
+      &:nth-child(5) {
+         grid-column: span 2;
+      }
+
+      &:nth-child(7) {
+         grid-column: span 2;
+      }
+   }
+}
+
+/* Responsive adjustments */
+@media (width <= 800px) {
+   .gallery {
+      column-count: 2;
+   }
 }

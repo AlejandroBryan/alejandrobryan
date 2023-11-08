@@ -1,208 +1,203 @@
 /* ====================== GRID AND FLEXBOX LAYOUT ========================== */
 
 .container {
-  min-height: 60%;
-  min-width: 320px;
-  padding: 0 10px;
-  overflow: auto;
-  width: 100%;
+   width: 100%;
+   min-width: 320px;
+   min-height: 60%;
+   padding: 0 10px;
+   overflow: auto;
 }
 
 .card {
-	flex-basis: 100%;
+   flex-basis: 100%;
 }
 
-pre{
-  background-color: rgb(14, 13, 13);
-  border-radius: $rounded;
-  color: $white-color;
+.r-card {
+   padding: 10px;
+   text-align: center;
+
+   h6 {
+      font-size: 26px;
+      font-weight: 700;
+   }
+
 }
+
 /* ======== GRID ========== */
 
 @supports (display: grid) {
-
-  .grid {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr;
-    margin: 0;
-
-    .card__body {
-        color: $white-color;
-        position: absolute;
-        padding: 10px;
-        top: 120px;  
-        left: 0; 
-        right: 0;
-        bottom: 0;
-
-        p{
-          color: $white-color;
-        }
-
-    }
-   
-
-    .grid__item {
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      background-color: rgba(238, 234, 234, 91.8%);
+   .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
       margin: 0;
-      height: 300px;
-      width: auto;
 
-    
+      .card__body {
+         position: absolute;
+         inset: 75px 0 0;
+         padding: 10px;
+         color: $white-color;
 
-      .card__title{ 
-        z-index: 2;
-        position: absolute;
-         left: 0;
-          top: 10px;
-        align-self: flex-start; 
-        padding: 0.5rem;
-        color: rgba(255,255,255,.90); 
-        font-size: 2rem;
-        line-height: 1;font-weight: 600; } 
-    }
-
-      .card__thumbnail{
-        position: relative;
-        overflow: hidden;  
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        width: 100%; 
-        height: 100%;
-
-        img{
-          height: 100%;
-        }
-
-      &:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
+         p {
+            color: $white-color;
+         }
       }
-    }
-  }
+
+      .grid__item {
+         position: relative;
+         display: flex;
+         width: auto;
+         height: 350px;
+         margin: 0;
+         overflow: hidden;
+         background-color: #eeeaeaea;
+
+         .card__title {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            z-index: 2;
+            align-self: flex-start;
+            padding: 0.5rem;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1;
+            color: #ffffffe6;
+         }
+      }
+
+      .card__thumbnail {
+         position: relative;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         overflow: hidden;
+
+         img {
+            height: 100%;
+         }
+
+         &:last-child {
+            grid-row: auto / auto;
+            grid-column: auto / auto;
+         }
+      }
+   }
 }
 
 /* ======== FLEXBOX ========== */
 
 .row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 
 [class^='col'] {
-  border-radius: 5px;
-  flex-basis: 100%;
-  margin-top: 10px;
-  min-height: 25px;
-  padding: 10px;
+   flex-basis: 100%;
+   min-height: 25px;
+   padding: 10px;
+   margin-top: 10px;
+   border-radius: 5px;
 }
 
 /* ====================  BREAK POINTS =================== */
 
 @media all and (min-width: $md) {
+   .grid {
+      grid-template-columns: 1fr 1fr;
 
-  .grid {
-    grid-template-columns: 1fr 1fr;
-    .card__body {
-      color: $white-color;
-      position: absolute;
-      padding: 10px;
-      top: 100px;  
-      left: 0; 
-      right: 0;
-      bottom: 0;
-
-  }
-  }
+      .card__body {
+         position: absolute;
+         inset: 100px 0 0;
+         padding: 10px;
+         color: $white-color;
+      }
+   }
 }
 
 @media all and (min-width: $xl) {
-
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+   .grid {
+      grid-template-columns: 1fr 1fr 1fr;
+   }
 }
 
 @media (min-width: $md) {
+   .container {
+      display: block;
+      width: 70%;
+      padding: 0;
+      margin: 2em auto;
+   }
 
-  .container {
-    display: block;
-    margin: 2em auto;
-    padding: 0;
-    width: 70%;
-  }
+   .row {
+      flex-direction: row;
+   }
 
-  .row {
-    flex-direction: row;
-  }
+   [class^='col'] {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 0;
+   }
 
-  [class^='col'] {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 0;
-  }
+   [class^='col'] + [class^='col'] {
+      margin-left: 10px;
+   }
 
-  [class^='col'] + [class^='col'] {
-    margin-left: 10px;
-  }
+   .col__1 {
+      flex-basis: 8.33%;
+   }
 
-  .col__1 {
-    flex-basis: 8.33%;
-  }
+   .col__2 {
+      flex-basis: 16.67%;
+   }
 
-  .col__2 {
-    flex-basis: 16.67%;
-  }
+   .col__3 {
+      flex-basis: 25%;
+   }
 
-  .col__3 {
-    flex-basis: 25%;
-  }
+   .col__4 {
+      flex-basis: 33.33%;
+   }
 
-  .col__4 {
-    flex-basis: 33.33%;
-  }
+   .col__5 {
+      flex-basis: 41.67%;
+   }
 
-  .col__5 {
-    flex-basis: 41.67%;
-  }
+   .col__6 {
+      flex-basis: 50%;
+   }
 
-  .col__6 {
-    flex-basis: 50%;
-  }
+   .col__7 {
+      flex-basis: 58.33%;
+   }
 
-  .col__7 {
-    flex-basis: 58.33%;
-  }
+   .col__8 {
+      flex-basis: 66.67%;
+   }
 
-  .col__8 {
-    flex-basis: 66.67%;
-  }
+   .col__9 {
+      flex-basis: 75%;
+   }
 
-  .col__9 {
-    flex-basis: 75%;
-  }
+   .col__10 {
+      flex-basis: 83.33%;
+   }
 
-  .col__10 {
-    flex-basis: 83.33%;
-  }
+   .col__11 {
+      flex-basis: 91.67%;
+   }
 
-  .col__11 {
-    flex-basis: 91.67%;
-  }
+   .col__12 {
+      flex-basis: 100%;
+   }
 
-  .col__12 {
-    flex-basis: 100%;
-  }
-
-  .under__construction__icon {
-    height: 600px;
-    width: 100%;
-  }
+   .under__construction__icon {
+      width: 100%;
+      height: 600px;
+   }
 }
