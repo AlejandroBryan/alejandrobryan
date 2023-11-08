@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint '_scss/**/*.scss'",
     "format": "stylelint '_scss/**/*.scss' --fix",
-    "deploy": "git add . && git commit -a -m 'add the case study and fully new integrations' &&  git push -u origin master -f"
+    "deploy": "git add . && git commit -a -m 'add the case study and fully new integrations' &&  git push -f"
   },
   "keywords": [],
   "author": "",
