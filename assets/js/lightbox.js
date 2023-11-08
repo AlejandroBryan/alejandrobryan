@@ -25,7 +25,6 @@
 //       this.style.display = 'none';
 //     });
 //   });
-
 $(document).ready(function(){
     lightbox.option({
         'resizeDuration': 200,
