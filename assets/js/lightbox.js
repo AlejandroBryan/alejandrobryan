@@ -26,7 +26,6 @@
 //     });
 //   });
 
-
 $(document).ready(function(){
     lightbox.option({
         'resizeDuration': 200,
