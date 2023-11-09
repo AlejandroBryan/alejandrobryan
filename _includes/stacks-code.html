@@ -1,13 +1,14 @@
-<div class="mb__3 mt__2 ml__md bg__primary">
-   <div class="mb__2">
-     <h6>Tecnologies used:</h6> 
+<div class="mb__3 mt__2 section">
+   <div class="mb__2 section__heading">
+      <h4>Technologies used:</h4>
    </div>
+   <div class="section__body">
+      {% for stack in page.stacks %}
 
-   {% for stack in page.stacks %}
+      <div class="badge {{stack}}">
+         <span> {{ stack }}</span>
+      </div>
 
-   <div class="badge {{stack}}">
-   <span> {{ stack }}</span>  
+      {% endfor %}
    </div>
-
-   {% endfor %}
 </div>

@@ -54,7 +54,7 @@ img {
       position: absolute;
       top: 50%;
       left: 50%;
-      font-size: 32px;
+      font-size: 12px;
       font-weight: 700;
       color: #fff;
       transform: translate(-50%, -50%);
@@ -63,7 +63,7 @@ img {
 
 .fa-github,
 .fa-screwdriver-wrench {
-   font-size: 22px;
+   font-size: 1.6em;
 }
 
 .gallery {
@@ -123,8 +123,9 @@ img {
 .lb-data .lb-number {
    display: block;
    padding-bottom: 1em;
+   margin-top: 10px;
    clear: left;
-   font-size: 25px;
+   font-size: 20px;
    color: #999;
 }
 
@@ -134,6 +135,20 @@ img {
 }
 
 @media (min-width: $md) {
+   .image__container {
+      .text {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         font-size: 18px;
+         font-weight: 700;
+         color: #fff;
+         transform: translate(-50%, -50%);
+      }
+   }
+
+
+
    .gallery {
       grid-template-rows: masonry;
       grid-template-columns: repeat(4, 1fr);
@@ -146,11 +161,8 @@ img {
       display: grid;
       grid-template-rows: 1fr auto;
       margin: 0;
-	   
-	  img{
 		object-fit: cover;
-	  }
-
+      
       &:first-child {
          grid-row: span 2;
          grid-column: span 2;
@@ -178,5 +190,19 @@ img {
 @media (width <= 800px) {
    .gallery {
       column-count: 2;
+   }
+}
+
+@media (min-width: $xl) {
+   .image__container {
+      .text {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         font-size: 32px;
+         font-weight: 700;
+         color: #fff;
+         transform: translate(-50%, -50%);
+      }
    }
 }

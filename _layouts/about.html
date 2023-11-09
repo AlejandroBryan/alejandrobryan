@@ -34,27 +34,27 @@ layout: default
    <h3 class="sub__heading mt__1">Frontend</h3>
    {% for stack in page.frontend %}
 
-   <span class="badge {{stack}}">
-      <i class="fa-brands fa-{{stack}}"> {{ stack }} </i>
-   </span>
+   <div class="badge {{stack}}">
+      <span> {{stack}} </span>
+   </div>
 
    {% endfor %}
 
    <h3 class="sub__heading mt__1">Backend</h3>
    {% for stack in page.backend %}
 
-   <span class="badge {{stack}}">
-      <i class="fa-brands fa-{{stack}}"> {{ stack }} </i>
-   </span>
+   <div class="badge {{stack}}">
+      <span> {{stack}} </span>
+   </div>
 
    {% endfor %}
-   
+
    <h4 class="sub__heading mt__1">Tools</h4>
    {% for stack in page.tools %}
 
-   <span class="badge {{stack}}">
-      <i class="fa-brands fa-{{stack}}"> {{ stack }} </i>
-   </span>
+   <div class="badge {{stack}}">
+      <span> {{stack}} </span>
+   </div>
 
    {% endfor %}
 </section>

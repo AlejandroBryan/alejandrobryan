@@ -47,36 +47,37 @@ A serverless, progressive web application (PWA) was built using React and a test
 
 The objective was to create the Meet platform, enabling effortless discovery and engagement with local events. A user-friendly interface was developed to facilitate easy event searches and access to detailed information.
 
-## Process:
+## Process
 
-{:.strong\_\_helper}
 
-> **Client Side:**
 
-> The front end was developed by us using React, focusing on creating a responsive and visually appealing interface. City-based event searching functionality was implemented, with data being fetched from the Google Calendar API, and PWA features were incorporated for offline access.
+**Client Side:**
 
-{:.strong\_\_helper}
+The front end was developed by us using React, focusing on creating a responsive and visually appealing interface. City-based event searching functionality was implemented, with data being fetched from the Google Calendar API, and PWA features were incorporated for offline access.
 
-> **Backend:**
 
-> AWS Lambda was employed by us to establish a scalable and cost-effective backend, with serverless functions designed to fetch event data responsively.
+
+**Backend:**
+
+AWS Lambda was employed by us to establish a scalable and cost-effective backend, with serverless functions designed to fetch event data responsively.
 
 #### Why serverless functions?
 
-> Serverless: No backend maintenance, easy to scale, always available, no cost for idle time.
+Serverless: No backend maintenance, easy to scale, always available, no cost for idle time.
 
 {% include stacks-code.html %}
 
-> Feel you free to have a look to source code {% include source-code.html %}
+Feel you free to have a look to source code {% include source-code.html %}.
 
 ### Below is an overview of key functionalities and page views available in the Meet application:
 
 {% include image-gallery.html %}
 
+
+
 ##### Retrospective
-
 The completion of the Meet project demonstrated the potential of serverless architecture, PWA, and SPA design. The TDD approach ensured the reliability of the code, resulting in a platform that effectively combined user-centric design with advanced technology.
-
+{:.blockquote .mb__3}
 <div class="row">
 
  <div class="col__3 r-card danger">
@@ -107,3 +108,4 @@ The completion of the Meet project demonstrated the potential of serverless arch
    </p>
 </div>
 </div>
+
