@@ -75,7 +75,7 @@ Feel you free to have a look to source code {% include source-code.html %}.
 
 
 
-##### Retrospective
+#### Retrospective
 The completion of the Meet project demonstrated the potential of serverless architecture, PWA, and SPA design. The TDD approach ensured the reliability of the code, resulting in a platform that effectively combined user-centric design with advanced technology.
 {:.blockquote .mb__3}
 <div class="row">

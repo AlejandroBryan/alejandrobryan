@@ -19,7 +19,7 @@ backend:
    - aws
    - heroku
    - express
-   - postgressql
+   - postgresql
    - jwt
 
 tools:

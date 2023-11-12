@@ -3,7 +3,8 @@
 
 * {
   box-sizing: border-box;
-  
+  padding: 0;
+  margin: 0;
 }
 
 body,
@@ -12,8 +13,6 @@ html {
 }
 
 body {
-  padding: 0;
-  margin: 0;
   font-family: Poppins, Lato, sans-serif;
   font-size: 16px;
   font-weight: $font-light;
