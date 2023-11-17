@@ -70,13 +70,6 @@ img {
    display: grid;
    gap: 10px;
    padding: 10px;
-   background: #676e6cc4;
-   background: linear-gradient(
-      90deg,
-      #9e9b9bd7 0%,
-      #bcbcc2d2 46%,
-      #45424675 100%
-   );
    border-radius: $rounded;
    column-count: 1;
 
@@ -85,7 +78,7 @@ img {
       display: grid;
       grid-template-rows: 1fr auto;
       margin: 0;
-      border: 1px solid #070707b9;
+      box-shadow: 1px solid #999;
 
       &:hover {
          .overlay {
@@ -115,7 +108,7 @@ img {
 }
 //========================= lightbox =========================
 .lb-data .lb-caption {
-   font-size: 32px;
+   font-size: 22px;
    font-weight: 700;
    line-height: 1em;
 }
@@ -125,7 +118,7 @@ img {
    padding-bottom: 1em;
    margin-top: 10px;
    clear: left;
-   font-size: 20px;
+   font-size: 16px;
    color: #999;
 }
 

@@ -49,13 +49,9 @@ The objective was to create the Meet platform, enabling effortless discovery and
 
 ## Process
 
-
-
 **Client Side:**
 
 The front end was developed by us using React, focusing on creating a responsive and visually appealing interface. City-based event searching functionality was implemented, with data being fetched from the Google Calendar API, and PWA features were incorporated for offline access.
-
-
 
 **Backend:**
 
@@ -73,39 +69,9 @@ Feel you free to have a look to source code {% include source-code.html %}.
 
 {% include image-gallery.html %}
 
-
-
 ##### Retrospective
+
 The completion of the Meet project demonstrated the potential of serverless architecture, PWA, and SPA design. The TDD approach ensured the reliability of the code, resulting in a platform that effectively combined user-centric design with advanced technology.
 {:.blockquote .mb__3}
-<div class="row">
 
- <div class="col__3 r-card danger">
-   <h6> What didn't go well? </h6>
-    <p>
-  The biggest challenge was integrating Google's authorization and adhering to their privacy policy, which was essential for allowing user logins to the application.   
-   </p>
- </div>
-
- <div class="col__3 r-card success">
- <h6> What went well? </h6>
-   <p>
- The integration of the API calendar, OAuth, and AWS serverless was achieved successfully, thanks to the extensive documentation provided for each technology. This allowed for a seamless connection between the application and the necessary services for user authentication and event management.
-   </p>
-</div>
-
- <div class="col__3 r-card warning">
- <h6>Future Steps</h6>
- <p>
-  expanding the platform's capabilities to fetch events from various providers and organizers, broadening the scope of accessible activities for users.
-  </p>
-</div>
-
-<div class="col__3 r-card info">
- <h6>Final Thoughts</h6>
-   <p>
-  I'm quite proud of myself for successfully building such a complex application with modern technologies and learning how web applications perform behind the scenes, especially in terms of SPA design and data visualization.
-   </p>
-</div>
-</div>
-
+{% include retrospective-cards.html %}

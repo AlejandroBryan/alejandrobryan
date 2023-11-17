@@ -6,3 +6,4 @@ vendor
 .hintrc
 .vscode
 script.txt
+node_modules

@@ -1,0 +1,24 @@
+.card {
+    position: relative;
+    flex-basis: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .card__body {
+        flex: 1 1 auto;
+        padding: 10px;
+        overflow-y: auto;  
+     }
+     .card__text{
+        line-height: 1.4;
+        margin-top: 15px;
+       }
+
+ }
+ @media all and (min-width: $md) {
+
+ 
+    
+ }

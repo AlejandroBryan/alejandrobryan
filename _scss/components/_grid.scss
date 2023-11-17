@@ -8,19 +8,21 @@
    overflow: auto;
 }
 
-.card {
-   flex-basis: 100%;
-}
 
 .r-card {
    padding: 10px;
    text-align: center;
-
+   display: flex;
+   flex-direction: column;
    h6 {
       font-size: 26px;
       font-weight: 700;
+      margin-bottom: 30px;
    }
 
+   p {
+      line-height: normal;
+   }
 }
 
 /* ======== GRID ========== */
@@ -128,24 +130,30 @@
 @media (min-width: $md) {
    .container {
       display: block;
-      width: 70%;
+      width: 80%;
       padding: 0;
       margin: 2em auto;
    }
-
    .row {
       flex-direction: row;
    }
 
    [class^='col'] {
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       margin-top: 0;
+      align-items: center;
    }
 
    [class^='col'] + [class^='col'] {
       margin-left: 10px;
    }
+   .col__md__6 {
+      flex-basis: 50%;
+   }
+}
+
+@media (min-width: $xl) {
 
    .col__1 {
       flex-basis: 8.33%;
@@ -200,3 +208,5 @@
       height: 600px;
    }
 }
+
+
