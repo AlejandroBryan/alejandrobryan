@@ -1,23 +1,16 @@
 .badge {
    position: relative;
-   display: inline-block;
-   width: 120px;
-   height: 120px;
-   padding: 12px 14px;
-   margin: 6px;
-   font-size: 16px;
+   display: block;
+   padding: 4px 10px;
+   font-size: 12px;
    font-weight: 900;
    color: #252525fa;
    text-align: center;
-   text-shadow: .8px 0  #1f1e1ed0;
+   margin-bottom: 10px;
    text-transform: uppercase;
    letter-spacing: .3px;
-   border-radius: $circle;
-
-   span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+   border-radius: $rounded;
+   &:hover{
+      opacity: .7;
    }
 }

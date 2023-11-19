@@ -41,37 +41,41 @@ gallery:
 
 ## Overview
 
-A serverless, progressive web application (PWA) was built using React and a test-driven development (TDD) approach. The application, designed as a single-page application (SPA), integrated with the Google Calendar API to fetch event information.
+Meet is an elegant, single-page application designed to help users discover and explore upcoming tech-related events hosted by CareerFoundry in their city. It offers a platform for users to find events that align with their tech interests and network with other professionals in the field. This user-friendly app makes staying informed and connected within the tech community easy.
+
+### Purpose and Context
+
+Meet was developed as a personal portfolio project during a web development course at CareerFoundry. The primary purpose of this project was to demonstrate the practical application of integrating third-party libraries and APIs using modern web development libraries. This case study showcases the skills and knowledge acquired in the course, highlighting the ability to create a functional and user-friendly web application that addresses real-world needs.
 
 ### Objectives
 
 The objective was to create the Meet platform, enabling effortless discovery and engagement with local events. A user-friendly interface was developed to facilitate easy event searches and access to detailed information.
 
-## Process
+### Process
 
 **Client Side:**
 
-The front end was developed by us using React, focusing on creating a responsive and visually appealing interface. City-based event searching functionality was implemented, with data being fetched from the Google Calendar API, and PWA features were incorporated for offline access.
+The front end, developed using React, focused on creating a responsive and visually appealing interface. City-based event searching functionality was implemented, with data being fetched from the Google Calendar API, and PWA features were incorporated for offline access.
 
 **Backend:**
 
-AWS Lambda was employed by us to establish a scalable and cost-effective backend, with serverless functions designed to fetch event data responsively.
+AWS Lambda was employed to establish a scalable and cost-effective backend. Serverless functions were designed to fetch event data responsively.
 
-#### Why serverless functions?
+#### Why a serverless function?
 
 Serverless: No backend maintenance, easy to scale, always available, no cost for idle time.
 
 {% include stacks-code.html %}
 
-Feel you free to have a look to source code {% include source-code.html %}.
+Feel free to look at the source code in the {% include source-code.html %}.
 
-### Below is an overview of key functionalities and page views available in the Meet application:
+### Key Functionalities and Page Views:
 
 {% include image-gallery.html %}
 
 ##### Retrospective
 
-The completion of the Meet project demonstrated the potential of serverless architecture, PWA, and SPA design. The TDD approach ensured the reliability of the code, resulting in a platform that effectively combined user-centric design with advanced technology.
-{:.blockquote .mb__3}
+Completing the Meet project demonstrated the potential of serverless architecture and PWA and SPA design. The TDD approach ensured the reliability of the code, resulting in a platform that effectively combined user-centric design with advanced technology..
+{:.blockquote .mb__3 .mt__3}
 
 {% include retrospective-cards.html %}

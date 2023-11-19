@@ -50,17 +50,17 @@
     
 
     &:hover {
-      color: $white-color;
-      background-color: $secondary-color;
+      color: $white__color;
+      background-color: $secondary__color;
     }
 
     &:visited {
-      border-bottom: 3px $primary-color solid;
+      border-bottom: 3px $primary__color solid;
     }
 
     &:active {
-      color: $secondary-color;
-      background-color: $secondary-color;
+      color: $secondary__color;
+      background-color: $secondary__color;
     }
   }
 }
@@ -140,6 +140,24 @@
   }
 }
 
+// === NAV LIST ===
+.nav__list {
+  li {
+    display: inline-block;
+
+    .social {
+      @include hover-effect-inverse;
+
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      margin-left: 5px;
+      text-indent: -9999px;
+      background-size: 80px 80px;
+      transition: all 0.7s;
+    }
+  }
+}
 // === HAMBURGER MENU ===
 
 @media (min-width: $md) {

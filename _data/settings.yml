@@ -22,7 +22,20 @@ menu:
 - {name: 'Blog',     url: 'blog'}
 - {name: 'Contact',  url: 'contact'}
 
-      
+meet:
+   - title: What didn't go well? 
+     style: 'danger'
+     words: 'The biggest challenge involved integrating Google’s         authorization and adhering to their privacy policy, essential for enabling user logins to the application.'  
+   - title: What Went Well?
+     style: 'success'
+     words: 'Thanks to the extensive documentation provided for each technology, the API calendar, OAuth, and AWS serverless integration were achieved successfully. This allowed for a seamless connection between the application and the necessary services for user authentication and event management.'
+   - title: Future Steps
+     style: 'warning'
+     words: 'Expanding the platform’s capabilities to fetch events from various providers and organizers, broadening the scope of accessible activities for users.'
+   - title: Final Thoughts
+     style: 'info'
+     words: 'I am proud of successfully building such a complex application with modern technologies and learning how web applications perform behind the scenes, particularly regarding SPA design and data visualization.'  
+
     
      
 

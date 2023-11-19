@@ -25,7 +25,6 @@
 
 .text__link {
   @include button-display;
-
   display: inline;
   width: fit-content;
   border-bottom: 1px solid #0e0d0dad;
@@ -33,13 +32,13 @@
 }
 
 .primary {
-  color: $white-color;
-  background-color: $primary-color;
+  color: $white__color;
+  background-color: $primary__color;
 }
 
 .secondary {
-  color: $white-color;
-  background-color: $secondary-color;
+  color: $white__color;
+  background-color: $secondary__color;
 }
 
 .w-100{

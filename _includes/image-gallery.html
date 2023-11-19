@@ -1,25 +1,24 @@
 <div class="gallery mt__3 mb__4">
    {% for image in page.gallery %}
-   
       <a
          href="{{ image.image_path_thumbnail }}"
-         data-lightbox="gallery"
          class="thumbnail rounded"
-         data-title="{{ image.title }}"
+         title="{{ image.title }}"
       >
          <img
             src="{{ image.image_path }}"  
             alt="{{ image.title }}"
+            title="{{ image.title }}"
          />
 
-         <div class="overlay">
+          <div class="overlay">
             <div class="overlay-icon">
                {% if include.text %} {{ include.text }}
                <i class="fas fa-plus" aria-hidden="true"></i> {% else %} 
              <i class="fas fa-plus" aria-hidden="true"></i>
                {% endif %}
             </div>
-         </div>
+         </div> 
       </a>
        
    {% endfor %}

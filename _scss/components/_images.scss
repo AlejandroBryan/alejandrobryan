@@ -1,201 +1,215 @@
 /* ====================== IMAGES ========================== */
+.lightbox-container img {
+   max-width: 100%; /* Ensure images don't exceed the container width */
+   max-height: 100%; /* Ensure images don't exceed the container height */
+ }
 
 svg,
 img {
-   width: 100%;
-   height: 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .bg__images {
-   height: 100%;
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-size: auto 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
 }
 
 .not__found__icon {
-   width: 100%;
-   height: 350px;
+  width: 100%;
+  height: 350px;
 }
 
 .contact__icons {
-   width: 45px;
-   height: 45px;
-   border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 .image__container {
-   position: relative;
-   width: $full-width;
-   margin-bottom: 20px;
+  position: relative;
+  width: $full-width;
+  margin-bottom: 20px;
 
-   &:hover {
-      .overlay {
-         opacity: 1;
-      }
-   }
+  &:hover {
+    .overlay {
+      opacity: 1;
+    }
+  }
 
-   .image {
-      display: block;
-      width: $full-width;
-      height: auto;
-   }
+  .image {
+    display: block;
+    width: $full-width;
+    height: auto;
+  }
 
-   .overlay {
-      position: absolute;
-      inset: 0;
-      width: $full-width;
-      height: 100%;
-      background-color: #ffffff0d;
-      opacity: 0;
-   }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    width: $full-width;
+    height: 100%;
+    background-color: #ffffff0d;
+    opacity: 0;
+  }
 
-   .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      font-size: 12px;
-      font-weight: 700;
-      color: #fff;
-      transform: translate(-50%, -50%);
-   }
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .fa-github,
 .fa-screwdriver-wrench {
-   font-size: 1.6em;
+  font-size: 1.6em;
 }
 
 .gallery {
-   display: grid;
-   gap: 10px;
-   padding: 10px;
-   border-radius: $rounded;
-   column-count: 1;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  border-radius: $rounded;
+  column-count: 1;
 
-   & > a {
-      position: relative;
-      display: grid;
-      grid-template-rows: 1fr auto;
-      margin: 0;
-      box-shadow: 1px solid #999;
+  & > a {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin: 0;
 
-      &:hover {
-         .overlay {
-            opacity: 1;
-         }
-      }
-
+    img {
+      border-radius: 12px;
+      box-shadow: 4px 4px 3px 2px #294c9256;
+      object-fit: cover;
+    }
+    &:hover {
       .overlay {
-         position: absolute;
-         inset: 0;
-         width: $full-width;
-         height: 100%;
-         background-color: #d8cfcf93;
-         opacity: 0;
-      }
+        opacity: 1;
 
-      .overlay-icon {
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         font-size: 42px;
-         font-weight: 700;
-         color: #6e6b6bce;
-         transform: translate(-50%, -50%);
       }
-   }
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      width: $full-width;
+      height: 100%;
+      background-color: #d8cfcf93;
+      opacity: 0;
+      border-radius: $rounded;
+    }
+
+    .overlay-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 42px;
+      font-weight: 700;
+      color: #6e6b6bce;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 //========================= lightbox =========================
 .lb-data .lb-caption {
-   font-size: 22px;
-   font-weight: 700;
-   line-height: 1em;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1em;
 }
 
 .lb-data .lb-number {
-   display: block;
-   padding-bottom: 1em;
-   margin-top: 10px;
-   clear: left;
-   font-size: 16px;
-   color: #999;
+  display: block;
+  padding-bottom: 1em;
+  margin-top: 10px;
+  clear: left;
+  font-size: 16px;
+  color: #999;
 }
 
 .lightboxOverlay {
-   background-color: #000;
-   opacity: 0.9;
+  background-color: #000;
+  opacity: 0.9;
 }
 
+.sl-wrapper {
+   background-color: #3636368a;
+}
+
+
+
 @media (min-width: $md) {
-   .image__container {
-      .text {
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         font-size: 18px;
-         font-weight: 700;
-         color: #fff;
-         transform: translate(-50%, -50%);
-      }
-   }
+  .image__container {
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      transform: translate(-50%, -50%);
+    }
+  }
 
+  .gallery {
+    grid-template-rows: masonry;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    outline: invert;
+  }
 
+  .gallery > a {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin: 0;
+   
+    &:first-child {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
 
-   .gallery {
-      grid-template-rows: masonry;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      padding: 20px;
-      outline: invert;
-   }
+    &:nth-child(2) {
+      grid-column: span 2;
+    }
 
-   .gallery > a {
-      display: grid;
-      grid-template-rows: 1fr auto;
-      margin: 0;
-		object-fit: cover;
-      
-      &:first-child {
-         grid-row: span 2;
-         grid-column: span 2;
-      }
+    &:nth-child(3) {
+      grid-column: span 2;
+    }
 
-      &:nth-child(2) {
-         grid-column: span 2;
-      }
+    &:nth-child(5) {
+      grid-column: span 2;
+    }
 
-      &:nth-child(3) {
-         grid-column: span 2;
-      }
-
-      &:nth-child(5) {
-         grid-column: span 2;
-      }
-
-      &:nth-child(7) {
-         grid-column: span 2;
-      }
-   }
+    &:nth-child(7) {
+      grid-column: span 2;
+    }
+  }
 }
 
 /* Responsive adjustments */
 @media (width <= 800px) {
-   .gallery {
-      column-count: 2;
-   }
+  .gallery {
+    column-count: 2;
+  }
 }
 
 @media (min-width: $xl) {
-   .image__container {
-      .text {
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         font-size: 32px;
-         font-weight: 700;
-         color: #fff;
-         transform: translate(-50%, -50%);
-      }
-   }
+  .image__container {
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+      transform: translate(-50%, -50%);
+    }
+  }
 }

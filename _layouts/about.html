@@ -2,59 +2,63 @@
 layout: default
 ---
 
-<h1 class="mb-1">About me</h1>
+<h1 class="mb__1">{{page.title}}</h1>
 
 <p>
-   I am a full-stack developer, a father of two, and a husband. These aspects
-   provide a well-rounded perspective on my identity. Originally from the
-   Dominican Republic, I spent my formative years there before moving to
-   Germany, "Na Servus" in 2018. Since then, I've engaged with various fields,
-   collecting diverse experiences that have enriched my outlook.
+  I am a full-stack developer, a father of two, and a husband. These aspects provide a well-rounded perspective on my
+  identity. Originally from the Dominican Republic, I spent my formative years there before moving to Germany, "Na
+  Servus" in 1018. Since then, I've engaged with various fields, collecting diverse experiences that have enriched my
+  outlook.
 </p>
 <p>
-   As a full-stack developer, my passion lies in finding the synergy between
-   creativity and technical expertise. This portfolio documents my journey,
-   highlighting my growth and progress over time. Each project encapsulates a
-   phase of my development, from crafting seamless user interfaces to
-   architecting complex back-end systems. Thank you for considering my
-   portfolio. Whether you're interested in my technological endeavors, my family
-   dynamics or enjoy personal narratives, I appreciate your time. Please contact
-   me, especially if you see potential for collaboration or want to explore my
-   journey as a full-stack developer.
+  As a full-stack developer, my passion lies in finding the synergy between creativity and technical expertise. This
+  portfolio documents my journey, highlighting my growth and progress over time. Each project encapsulates a phase of my
+  development, from crafting seamless user interfaces to architecting complex back-end systems. Thank you for
+  considering my portfolio. Whether you're interested in my technological endeavors, my family dynamics or enjoy
+  personal narratives, I appreciate your time. Please contact me, especially if you see potential for collaboration or
+  want to explore my journey as a full-stack developer.
 </p>
-<a
-   href="/assets/files/alejandro_cv_en.pdf"
-   class="btn primary rounded mb__4"
-   download
-   >Download my CV</a
->
+<a href="/assets/files/alejandro_cv_en.pdf" class="btn primary rounded mb__4" download>Download my CV</a>
 
 <h2>Skills</h2>
 <section class="ml__1 mb__1">
-   <h3 class="sub__heading mt__1">Frontend</h3>
-   {% for stack in page.frontend %}
+  <div class="section">
+    <div class="mb__1 section__heading">
+      <h3 class="sub__heading mt__1">Frontend</h3>
+    </div>
+    <div class="section__body">
+      {% for stack in page.frontend %}
+      <div class="badge {{stack}}">
+        <span> {{stack}} </span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 
-   <div class="badge {{stack}}">
-      <span> {{stack}} </span>
-   </div>
+  <div class="section">
+    <div class="mb__1 section__heading">
+      <h3 class="sub__heading mt__1">Backend</h3>
+    </div>
 
-   {% endfor %}
+    <div class="section__body">
+      {% for stack in page.backend %}
 
-   <h3 class="sub__heading mt__1">Backend</h3>
-   {% for stack in page.backend %}
+      <div class="badge {{stack}}">
+        <span> {{stack}} </span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 
-   <div class="badge {{stack}}">
-      <span> {{stack}} </span>
-   </div>
+  <div class="section">
+    <h4 class="sub__heading mt__1">Tools</h4>
+    <div class="section__body">
+      {% for stack in page.tools %}
 
-   {% endfor %}
-
-   <h4 class="sub__heading mt__1">Tools</h4>
-   {% for stack in page.tools %}
-
-   <div class="badge {{stack}}">
-      <span> {{stack}} </span>
-   </div>
-
-   {% endfor %}
+      <div class="badge {{stack}}">
+        <span> {{stack}} </span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>

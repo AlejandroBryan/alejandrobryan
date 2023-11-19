@@ -80,30 +80,23 @@ export default class Form {
     const settings = {
       method: 'POST',
       headers: {
-        'Accept': 'application/json',
+        Accept: 'application/json',
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin':'*'
+        'Access-Control-Allow-Origin': '*',
       },
       body: JSON.stringify(data),
     };
 
-    
     try {
       const response = await fetch(`${api}`, settings);
-      if (!response.ok){
-      throw new Error(`HTTP error! status: ${response.status}`);
-
-    } 
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
       const data = await response.json();
-      this.modal.show(
-        'Information successfully submitted, I really appreciate it!',
-        'Success',
-        'text__success',
-      );
+      this.modal.show('Information successfully submitted, I really appreciate it!', 'Success', 'text__success');
       this.formReset();
       console.log(data);
       return data;
-      
     } catch (err) {
       this.modal.show(err.message, 'Warning', 'text__danger');
     }
@@ -215,11 +208,9 @@ export default class Form {
     this.allFields.forEach((el) => {
       el.insertAdjacentHTML(
         'afterend',
-        `
-                         <div class="alert danger liveValidateMessage small">
-                             
-                         </div>
-                     `,
+        `<div class="alert danger liveValidateMessage small">
+         </div>
+        `,
       );
     });
   }

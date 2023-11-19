@@ -22,12 +22,12 @@
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 20px;
-  color: $primary-color;
+  color: $primary__color;
   cursor: pointer;
   transition: 0.3s;
 
   &:hover{
-    @include hover-effect($primary-color);
+    @include hover-effect($primary__color);
 
   }
 }

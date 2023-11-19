@@ -1,51 +1,12 @@
 <div class="row">
+  {% for card in site.data.settings.meet %}
   <div class="col__6">
-    <div class="card text__center rounded danger">
+    <div class="card rounded text__center {{card.style}}">
       <div class="card__body">
-        <h5 class="card__title">What didn't go well?</h5>
-        <p class="card__text">
-          The biggest challenge was integrating Google's authorization and adhering to their privacy policy, which was
-          essential for allowing user logins to the application.
-        </p>
+        <h5 class="card__title">{{ card.title }}</h5>
+        <p class="card__text">{{card.words}}</p>
       </div>
     </div>
   </div>
-
-  <div class="col__6">
-    <div class="card text__center rounded success">
-      <div class="card__body">
-        <h5 class="card__title">What went well?</h5>
-        <p class="card__text">
-          The integration of the API calendar, OAuth, and AWS serverless was achieved successfully, thanks to the
-          extensive documentation provided for each technology. This allowed for a seamless connection between the
-          application and the necessary services for user authentication and event management.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col__6">
-    <div class="card rounded text__center warning">
-      <div class="card__body">
-        <h5 class="card__title">Future Steps</h5>
-        <p class="card__text">
-          expanding the platform's capabilities to fetch events from various providers and organizers, broadening the
-          scope of accessible activities for users.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col__6">
-    <div class="card rounded text__center info">
-      <div class="card__body">
-        <h5 class="card__title">Final Thoughts</h5>
-        <p class="card__text">
-          I'm quite proud of myself for successfully building such a complex application with modern technologies and
-          learning how web applications perform behind the scenes, especially in terms of SPA design and data
-          visualization.
-        </p>
-      </div>
-    </div>
-  </div>
+  {% endfor %}
 </div>

@@ -1,10 +1,16 @@
 import NavBar from './modules/navbar.class';
 import Modal from './modules/modal.class';
 import Form from './modules/form-validator.class';
+import Lightbox from './modules/lightbox.class';
+//import SimpleLightbox from "simplelightbox";
 
 document.addEventListener('DOMContentLoaded', function () {
   if (document.querySelector('.toggle__button')) {
     new NavBar();
+  }
+
+  if (document.querySelector('.gallery a')) {
+    new Lightbox();
   }
   //if(document.querySelector('.modal')){new Modal()};
   if (document.querySelector('.contact__form')) {
@@ -30,11 +36,3 @@ copyCodeButtons.forEach((copyCodeButton, index) => {
 });
 });
 
-$(document).ready(function(){
-  lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true,
-      "showImageNumberLabel" : true,
-      alwaysShowNavOnTouchDevices: true
-  });
-});

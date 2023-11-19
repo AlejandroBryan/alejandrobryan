@@ -3,66 +3,77 @@ layout: default
 ---
 
 <div id="modal" class="modal">
-   <div class="modal__content text__danger">
-      <h3 class="modal__title"></h3>
-      <span class="close__button">&times;</span>
-      <div class="modal__body"></div>
-   </div>
+  <div class="modal__content text__danger">
+    <h3 class="modal__title"></h3>
+    <span class="close__button">&times;</span>
+    <div class="modal__body"></div>
+  </div>
 </div>
 
-<div class="row mb-2">
-   <div class="col-8">
-      <h1>Contact Me</h1>
-   </div>
+<div class="mb__1">
+  <h1>Let's Connect!</h1>
 </div>
-
+<p>
+  I'm always excited to discuss new opportunities, collaborate on innovative projects, or just have a chat about the
+  fascinating world of web development. Whether you have a question, a project in mind, or simply want to say hello,
+  please don't hesitate to get in touch. Drop me a message using the form below, or connect with me on
+  <a href="https://www.linkedin.com/in/alejandro-bryan-944934231/" class="text__link" target="_blank">LinkedIn</a> or
+  <a href="https://github.com/AlejandroBryan" class="text__link" target="_blank">GitHub</a> to see more of my work. Your
+  ideas and inquiries are always welcome, and I look forward to hearing from you!
+</p>
 <div class="row">
-   <div class="col-8">
-      <form action="#" class="contact__form" id="contact__form">
-         <fieldset>
-            <legend>Let me a message behind</legend>
-            <div>
-               <label for="name">Name</label>
-               <input
-                  class="form__control"
-                  type="text"
-                  name="name"
-                  placeholder="John Doe*"
-                  id="name"
-                  required
-               />
-            </div>
+   <div class="col__6 d__column text__center">
+      <h4>Time Zone</h4>
+      <p>Germany Central European Standard Time</p>
+      <div >
+  
+      
+        <ul class="nav__list">
+           <li>
+             <a href="https://github.com/AlejandroBryan" class="social github" target="_blank" rel="noopener">GitHub</a>
+           </li>
+           <li>
+             <a href="https://twitter.com/AlejandroBryan0" class="social twitter" target="_blank" rel="noopener">Twitter</a>
+           </li>
+           <li>
+             <a href="https://www.linkedin.com/in/alejandro-bryan-944934231/" class="social linkedin" target="_blank" rel="noopener">linkedin</a>                   
+           </li>
+       </ul>
+     </div>
+    </div>
 
-            <div>
-               <label for="email">Email</label>
-               <input
-                  class="form__control"
-                  type="email"
-                  name="email"
-                  placeholder="johndoe@zmail.com*"
-                  id="email"
-                  required
-               />
-            </div>
 
-            <div>
-               <label for="message">Message</label>
-               <textarea
-                  class="form__control"
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                  placeholder="Message here...*"
-                  required
-               ></textarea>
-            </div>
-            <div>
-               <button class="btn primary rounded-l large mt-2" type="submit">
-                  Send ur message
-               </button>
-            </div>
-         </fieldset>
-      </form>
-   </div>
+  <div class="col__6">
+    <form action="#" class="contact__form" id="contact__form">
+      <fieldset>
+        <legend>Drop me a message</legend>
+        <div>
+          <label for="name">Name</label>
+          <input class="form__control" type="text" name="name" placeholder="John Doe*" id="name" required />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input class="form__control" type="email" name="email" placeholder="johndoe@zmail.com*" id="email" required />
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea
+            class="form__control"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message here...*"
+            required
+          ></textarea>
+        </div>
+        <div>
+          <button class="btn primary rounded large mt-2 w-100" type="submit">Send ur message</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  
 </div>
