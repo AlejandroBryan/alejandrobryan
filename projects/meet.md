@@ -41,7 +41,7 @@ gallery:
 
 ## Overview
 
-Meet is an elegant, single-page application designed to help users discover and explore upcoming tech-related events hosted by CareerFoundry in their city. It offers a platform for users to find events that align with their tech interests and network with other professionals in the field. This user-friendly app makes staying informed and connected within the tech community easy.
+Meet is an elegant, single-page application designed to help users discover and explore upcoming tech-related events hosted by CareerFoundry in their city. It offers a platform for users to find events that align with their tech interests and network with other professionals in the field. This user-friendly app makes staying informed and connected within the tech community easily.
 
 ### Purpose and Context
 
