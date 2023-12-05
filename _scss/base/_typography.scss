@@ -35,6 +35,7 @@ strong{
 
 h1 {
   font-size: 3em;
+ 
 }
 
 h2 {
@@ -64,6 +65,8 @@ h6 {
 
 .sub__heading{
   color: #000000a1;
+  margin-bottom: 6px;
+  font-size: 24px;
 
 }
 
@@ -76,7 +79,6 @@ p {
 
 a {
   @include hover-effect($primary__color);
-
   color: $primary__color;
   text-decoration: none;
 }
@@ -85,6 +87,8 @@ a {
   color: $primary__color;
   text-decoration: none;
 }
+
+
 
 .blockquote {
   padding-left: 20px;

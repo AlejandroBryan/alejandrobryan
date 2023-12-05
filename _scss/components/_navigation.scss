@@ -37,6 +37,7 @@
   }
 
   .item {
+    text-align: center;
     display: block;
     width: $full-width;
     padding: 6px;
@@ -50,18 +51,17 @@
     
 
     &:hover {
-      color: $white__color;
-      background-color: $secondary__color;
+      background: url("../../assets/images/stroke_bg.svg") no-repeat center / contain;
     }
 
     &:visited {
       border-bottom: 3px $primary__color solid;
     }
 
-    &:active {
-      color: $secondary__color;
-      background-color: $secondary__color;
-    }
+    // &:active {
+    //   color: $secondary__color;
+    //   background:rgba(54, 96, 211, 0.93) url("../../assets/images/stroke_bg.svg") no-repeat center / fill;
+    // }
   }
 }
 
@@ -160,7 +160,7 @@
 }
 // === HAMBURGER MENU ===
 
-@media (min-width: $md) {
+@media (min-width: $xl) {
   .toggle__button {
     display: none;
   }
@@ -192,6 +192,10 @@
       .item {
         padding: 6px;
         text-align: center;
+        &:hover {
+          color: $white__color;
+          background: $secondary__color;
+        }
       }
     }
   }

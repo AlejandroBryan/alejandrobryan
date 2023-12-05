@@ -1,6 +1,6 @@
 <div class="row">
-  {% for card in site.data.settings.meet %}
-  <div class="col__6">
+  {% for card in page.card-info %}
+  <div class="col__6 col__md__6">
     <div class="card rounded text__center {{card.style}}">
       <div class="card__body">
         <h5 class="card__title">{{ card.title }}</h5>

@@ -12,22 +12,66 @@ stacks:
   - eslint
   - prettier
   - babel
+card-info:
+ - title: Challenges
+   style: 'danger'
+   words: 'Integrating various API endpoints and maintaining data consistency across user interactions were significant challenges, requiring careful planning and testing.'
+ - title: Successes
+   style: 'success'
+   words: 'Successfully creating a functional and secure REST API that interacts seamlessly with the MongoDB database was a major accomplishment, demonstrating proficiency in server-side development.'
+ - title: future steps
+   style: 'warning'
+   words: 'Future enhancements include expanding the database to include more diverse movie genres and incorporating additional user features like movie ratings and reviews.'
+ - title: final thoughts
+   style: 'info'
+   words: 'Building the server-side of "my-flixx" was an enriching experience that solidified full-stack development skills, particularly in creating and managing APIs and databases.' 
+
+
+
+
   
 ---
 
 {% 
 include image.html url="https://myflixx.herokuapp.com/" image="/projects/my-flixx/my-flixx.png" %}
 
-My-Flixx is a movie API that I developed as part of my backend web development portfolio. This project demonstrates my skills in creating a RESTful API using Node.js, Express, MongoDB, and JWT (JSON Web Tokens). With My-Flixx, users can interact with a comprehensive collection of movies, benefiting from features such as browsing, searching, and securely managing their accounts.
+## Overview:
+My-flixx is a comprehensive web application designed to provide movie enthusiasts with extensive information about various movies, directors, and genres. The server-side component, developed using full-stack JavaScript technologies, allows users to interact with a database storing movie data, create personal profiles, and curate lists of their favorite movies.
 
-The primary objective of My-Flixx is to serve as a centralized movie database accessible through a RESTful API. Users can retrieve detailed information about movies, including titles, genres, release years, and more. To ensure secure user authentication, My-Flixx incorporates JWT, allowing only registered users to access features like favoriting movies, leaving reviews, and managing their personal accounts.
+### Purpose and Context:
+In an era where JavaScript developers are expected to have both front-end and back-end skills, "my-flixx" was created as part of a full-stack development course. The project demonstrates the ability to build a REST API interfacing with a MongoDB database, showcasing skills in the MERN stack (MongoDB, Express, React, Node.js).
+
+### Objectives:
+The primary goal was to build the server-side for "my-flixx," enabling users to access movie data, register and update personal information, and manage their favorite movies list. The focus was on creating a robust API with efficient database interactions.
+
+#### Process:
+
+**Server-Side Development:**
+
+The back-end was developed using Node.js and Express, with MongoDB for database management. The REST API was designed to handle various data operations, including CRUD (Create, Read, Update, Delete) functionalities for movies, directors, and user profiles.
 
 {% include stacks-code.html %}
 
-One of the core features of My-Flixx is its ability to effectively manage movie data. The API supports CRUD operations, enabling administrators to add new movies, update existing records, and remove obsolete entries. Users can retrieve a list of movies or search for specific movies based on various criteria, such as genre, title, or release year. The API responds with relevant movie data, including detailed information and user ratings.
+Key Functionalities:
 
-My-Flixx provides user registration and login functionality using JWT. Once authenticated, users receive a token that grants access to protected endpoints and allows for personalization of their movie experience. Authenticated users can leave reviews for movies, add favorites to their personal list, and manage their account settings.
+Providing detailed information about movies, directors, and genres.
+User registration and profile management.
+Ability for users to add or remove movies from their favorites list.
+Secure user authentication and data validation.
 
-Technically, My-Flixx is built using Node.js and Express, creating a robust server-side environment for handling HTTP requests and responses. MongoDB is utilized as the database for storing movie information, user data, and related records. The flexibility and scalability of MongoDB make it an ideal choice for managing complex data. The implementation of JWT ensures secure authentication and authorization for protected endpoints.
+Technical Requirements:
 
-In conclusion, My-Flixx is a powerful and feature-rich movie API that showcases my skills in backend web development. By building My-Flixx, I have demonstrated proficiency in data management, user authentication, and RESTful API design. This project serves as a valuable asset in my portfolio, highlighting my abilities as a backend web developer.
+Node.js and Express application.
+RESTful architecture.
+MongoDB database with Mongoose for business logic modeling.
+JSON format for movie information.
+Implementation of user authentication and authorization.
+Deployment on Heroku and code hosting on GitHub.
+
+
+Retrospective:
+Developing "my-flixx" highlighted the importance of back-end development in full-stack JavaScript projects. Challenges included ensuring efficient database queries and implementing secure authentication mechanisms.
+{:.blockquote .mb__3 .mt__3}
+
+{% include retrospective-cards.html %}
+

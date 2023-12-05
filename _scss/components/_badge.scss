@@ -12,5 +12,6 @@
    border-radius: $rounded;
    &:hover{
       opacity: .7;
+      background: url("../../assets/images/stroke_bg.svg") no-repeat left / contain;
    }
 }

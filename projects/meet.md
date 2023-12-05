@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'meet'
+title: 'Meet'
 source-code: 'https://github.com/AlejandroBryan/meet'
 stacks:
    - react
@@ -12,7 +12,19 @@ stacks:
    - gh-pages
    - puppeteer
    - jest-cucumber
-
+card-info:
+   - title: Challenges 
+     style: 'danger'
+     words: 'The biggest challenge involved integrating Google’s         authorization and adhering to their privacy policy, essential for enabling user logins to the application.'  
+   - title: Successes
+     style: 'success'
+     words: 'Thanks to the extensive documentation provided for each technology, the API calendar, OAuth, and AWS serverless integration were achieved successfully. This allowed for a seamless connection between the application and the necessary services for user authentication and event management.'
+   - title: Future Steps
+     style: 'warning'
+     words: 'Expanding the platform’s capabilities to fetch events from various providers and organizers, broadening the scope of accessible activities for users.'
+   - title: Final Thoughts
+     style: 'info'
+     words: 'I am proud of successfully building such a complex application with modern technologies and learning how web applications perform behind the scenes, particularly regarding SPA design and data visualization.'  
 gallery:
    - image_path: /assets/images/projects/meet/gallery/google-calendar.png
      image_path_thumbnail: /assets/images/projects/meet/thumbnails/google-calendar.png
