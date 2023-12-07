@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "stylelint '_scss/**/*.scss'",
-    "format": "stylelint '_scss/**/*.scss' --fix",
-    "deploy": "git add . && git commit -a -m 'add the case study and fully new integrations' &&  git push -f"
+    "lint": "stylelint _scss/**/*.scss ",
+    "format": "stylelint _scss/**/*.scss --fix",
+    "deploy": "git add . && git commit -m \" adjusting the layout\" &&  git push -f"
   },
   "keywords": [],
   "author": "",

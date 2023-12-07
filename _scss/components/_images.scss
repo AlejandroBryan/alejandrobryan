@@ -68,14 +68,13 @@ img {
 
 .gallery {
    display: grid;
-   gap: 10px;
    padding: 10px;
-   background: #676e6cc4;
+   background: #1f2422c4;
    background: linear-gradient(
       90deg,
-      #9e9b9bd7 0%,
-      #bcbcc2d2 46%,
-      #45424675 100%
+      #352626d7 0%,
+      #191931d2 46%,
+      #2c223075 100%
    );
    border-radius: $rounded;
    column-count: 1;
@@ -85,7 +84,7 @@ img {
       display: grid;
       grid-template-rows: 1fr auto;
       margin: 0;
-      border: 1px solid #070707b9;
+      border: 2px solid #070707b9;
 
       &:hover {
          .overlay {
@@ -152,27 +151,22 @@ img {
    .gallery {
       grid-template-rows: masonry;
       grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      padding: 20px;
+      padding: 2px;
       outline: invert;
+      gap: 10px;
+      padding: 10px;
    }
 
    .gallery > a {
       display: grid;
       grid-template-rows: 1fr auto;
       margin: 0;
-		object-fit: cover;
       
       &:first-child {
-         grid-row: span 2;
          grid-column: span 2;
       }
 
       &:nth-child(2) {
-         grid-column: span 2;
-      }
-
-      &:nth-child(3) {
          grid-column: span 2;
       }
 
