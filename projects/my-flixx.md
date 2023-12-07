@@ -22,7 +22,7 @@ card-info:
       words: 'Successfully creating a functional and secure REST API that interacts seamlessly with the MongoDB database was a major accomplishment, demonstrating proficiency in server-side development.'
     - title: future steps
       style: 'warning'
-      words: 'Future enhancements include expanding the database to include more diverse movie genres and incorporating additional user features like movie ratings and reviews.'
+      words: 'Future enhancements include expanding the database to include more diverse movie genres and incorporating additional user features like movie ratings and reviews'
     - title: final thoughts
       style: 'info'
       words: 'Building the server-side of My-flixx was an enriching experience that solidified full-stack development skills, particularly in creating and managing APIs and databases.
@@ -31,7 +31,8 @@ card-info:
 {% 
 include image.html url="https://myflixx.herokuapp.com/" image="/projects/my-flixx/my-flixx.png" %}
 
-## Overview:
+## Overview
+
 My-flixx is a comprehensive web application designed to provide movie enthusiasts with extensive information about various movies, directors, and genres. The server-side component, developed using full-stack JavaScript technologies, allows users to interact with a database storing movie data, create personal profiles, and curate lists of their favorite movies.
 
 ### Purpose and Context:
