@@ -12,24 +12,20 @@ stacks:
   - eslint
   - prettier
   - babel
+
 card-info:
- - title: Challenges
-   style: 'danger'
-   words: 'Integrating various API endpoints and maintaining data consistency across user interactions were significant challenges, requiring careful planning and testing.'
- - title: Successes
-   style: 'success'
-   words: 'Successfully creating a functional and secure REST API that interacts seamlessly with the MongoDB database was a major accomplishment, demonstrating proficiency in server-side development.'
- - title: future steps
-   style: 'warning'
-   words: 'Future enhancements include expanding the database to include more diverse movie genres and incorporating additional user features like movie ratings and reviews.'
- - title: final thoughts
-   style: 'info'
-   words: 'Building the server-side of "my-flixx" was an enriching experience that solidified full-stack development skills, particularly in creating and managing APIs and databases.' 
-
-
-
-
-  
+    - title: Challenges
+      style: 'danger'
+      words: 'Integrating various API endpoints and maintaining data consistency across user interactions were significant challenges, requiring careful planning and testing.'
+    - title: Successes
+      style: 'success'
+      words: 'Successfully creating a functional and secure REST API that interacts seamlessly with the MongoDB database was a major accomplishment, demonstrating proficiency in server-side development.'
+    - title: future steps
+      style: 'warning'
+      words: 'Future enhancements include expanding the database to include more diverse movie genres and incorporating additional user features like movie ratings and reviews.'
+    - title: final thoughts
+      style: 'info'
+      words: 'Building the server-side of My-flixx was an enriching experience that solidified full-stack development skills, particularly in creating and managing APIs and databases.
 ---
 
 {% 

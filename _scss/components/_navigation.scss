@@ -19,6 +19,7 @@
   list-style-type: none;
   background-color: #fdfdfd;
   border-radius: $rounded;
+  padding: 12px 0;
  
 
   .nav__link {
@@ -75,7 +76,7 @@
   outline: none;
 
   .logo {
-    height: 65px;
+    height: 75px;
   }
 }
 
@@ -172,7 +173,7 @@
       top: 3px;
 
       .logo {
-        height: 75px;
+        height: 95px;
       }
     }
   }

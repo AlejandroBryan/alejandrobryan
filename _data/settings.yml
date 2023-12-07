@@ -17,7 +17,7 @@ projects:
 - {
   name: 'my-flixx-client',
   url: 'my-flixx-client',
-  description: 'The my-flixx-client application is a responsive, single-page web app developed using React. It serves as the user interface for the myFlix movie database, allowing users to access detailed information about movies, directors, and genres. The app features a sleek design with functionalities like movie search, user registration, profile management, and the ability to create a list of favorite movies. Built as part of a full-stack JavaScript development course, the myFlix client-side project showcases advanced skills in React, state routing, and responsive design, providing a seamless and engaging user experience.'
+  description: 'The my-flixx-client application is a responsive, single-page web app developed using React. It serves as the user interface for the My-flixx movie database, allowing users to access detailed information about movies, directors, and genres. The app features a sleek design with functionalities like movie search, user registration, profile management, and the ability to create a list of favorite movies. Built as part of a full-stack JavaScript development course, the My-flixx client-side project showcases advanced skills in React, state routing, and responsive design, providing a seamless and engaging user experience.'
   
   }
 - {
@@ -34,7 +34,7 @@ projects:
 - {
   name: 'my-flixx-client-angular',   
   url: 'my-flixx-client-angular',
-  description: 'The myFlix Angular application is a responsive, single-page web app designed to complement the existing myFlix server-side code. It offers an engaging platform for movie enthusiasts to access detailed information about movies, directors, and genres. Developed with Angular and Angular Material, the app features user-friendly registration and login forms, along with multiple interface views for an enhanced user experience. This project not only showcases Angular development skills but also emphasizes the importance of clear documentation and effective collaboration in modern web development.'
+  description: 'The My-flixx Angular application is a responsive, single-page web app designed to complement the existing My-flixx server-side code. It offers an engaging platform for movie enthusiasts to access detailed information about movies, directors, and genres. Developed with Angular and Angular Material, the app features user-friendly registration and login forms, along with multiple interface views for an enhanced user experience. This project not only showcases Angular development skills but also emphasizes the importance of clear documentation and effective collaboration in modern web development.'
   }
 
 
