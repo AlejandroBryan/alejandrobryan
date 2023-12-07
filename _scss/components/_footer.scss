@@ -5,6 +5,7 @@
   padding: 12px 10px;
   margin-top: 25px;
   margin-bottom: 0;
+  overflow: hidden;
 }
 
 .footer__nav {
@@ -15,8 +16,8 @@
       @include hover-effect-inverse;
 
       display: inline-block;
-      width: 45px;
-      height: 45px;
+      width: 65px;
+      height: 65px;
       margin-left: 5px;
       text-indent: -9999px;
       background-size: 45px 45px;
@@ -26,14 +27,18 @@
 }
 
 .github {
+
   background-image: url('../images/github_icon.svg');
+  background-repeat: no-repeat;
 }
 
 .linkedin {
   background-image: url('../images/linkedin_icon.svg');
+  background-repeat: no-repeat;
 }
 
 .twitter {
   background-image: url('../images/twitter_icon.svg');
+  background-repeat: no-repeat;
 }
 

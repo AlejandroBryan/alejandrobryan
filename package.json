@@ -5,21 +5,38 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-dev": "babel ./src --out-dir assets/",
+    "babel-build": "babel ./src --out-dir assets/",
+    "dev": "npm run babel-dev && webpack --config config/webpack.dev.js --watch",
+    "build": "npm run babel-build && webpack --config config/webpack.prod.js",
     "lint": "stylelint _scss/**/*.scss ",
     "format": "stylelint _scss/**/*.scss --fix",
-    "deploy": "git add . && git commit -m \" adjusting the layout\" &&  git push -f"
+    "deploy": "git add . && git commit -m \" meet case study \" &&  git push -f"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.3",
+    "@babel/eslint-parser": "^7.23.3",
+    "css-loader": "^6.8.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "install": "^0.13.0",
+    "style-loader": "^3.3.3",
     "stylelint": "^15.11.0",
     "stylelint-config-recess-order": "^4.3.0",
     "stylelint-config-recommended-scss": "^13.1.0",
     "stylelint-config-standard": "^34.0.0",
-    "stylelint-scss": "^5.3.0"
+    "stylelint-scss": "^5.3.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-remove-empty-scripts": "^1.0.4"
   },
   "dependencies": {
-    "hex-to-rgba": "^2.0.1"
+    "jquery": "^3.7.1",
+    "simplelightbox": "^2.14.2"
   }
 }

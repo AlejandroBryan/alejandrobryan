@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'meet'
+title: 'Meet'
 source-code: 'https://github.com/AlejandroBryan/meet'
 stacks:
    - react
@@ -12,7 +12,19 @@ stacks:
    - gh-pages
    - puppeteer
    - jest-cucumber
-
+card-info:
+   - title: Challenges 
+     style: 'danger'
+     words: 'The biggest challenge involved integrating Google’s         authorization and adhering to their privacy policy, essential for enabling user logins to the application.'  
+   - title: Successes
+     style: 'success'
+     words: 'Thanks to the extensive documentation provided for each technology, the API calendar, OAuth, and AWS serverless integration were achieved successfully. This allowed for a seamless connection between the application and the necessary services for user authentication and event management.'
+   - title: Future Steps
+     style: 'warning'
+     words: 'Expanding the platform’s capabilities to fetch events from various providers and organizers, broadening the scope of accessible activities for users.'
+   - title: Final Thoughts
+     style: 'info'
+     words: 'I am proud of successfully building such a complex application with modern technologies and learning how web applications perform behind the scenes, particularly regarding SPA design and data visualization.'  
 gallery:
    - image_path: /assets/images/projects/meet/gallery/google-calendar.png
      image_path_thumbnail: /assets/images/projects/meet/thumbnails/google-calendar.png
@@ -41,71 +53,41 @@ gallery:
 
 ## Overview
 
-A serverless, progressive web application (PWA) was built using React and a test-driven development (TDD) approach. The application, designed as a single-page application (SPA), integrated with the Google Calendar API to fetch event information.
+Meet is an elegant, single-page application designed to help users discover and explore upcoming tech-related events hosted by CareerFoundry in their city. It offers a platform for users to find events that align with their tech interests and network with other professionals in the field. This user-friendly app makes staying informed and connected within the tech community easily.
+
+### Purpose and Context
+
+Meet was developed as a personal portfolio project during a web development course at CareerFoundry. The primary purpose of this project was to demonstrate the practical application of integrating third-party libraries and APIs using modern web development libraries. This case study showcases the skills and knowledge acquired in the course, highlighting the ability to create a functional and user-friendly web application that addresses real-world needs.
 
 ### Objectives
 
 The objective was to create the Meet platform, enabling effortless discovery and engagement with local events. A user-friendly interface was developed to facilitate easy event searches and access to detailed information.
 
-## Process
-
-
+### Process
 
 **Client Side:**
 
-The front end was developed by us using React, focusing on creating a responsive and visually appealing interface. City-based event searching functionality was implemented, with data being fetched from the Google Calendar API, and PWA features were incorporated for offline access.
-
-
+The front end, developed using React, focused on creating a responsive and visually appealing interface. City-based event searching functionality was implemented, with data being fetched from the Google Calendar API, and PWA features were incorporated for offline access.
 
 **Backend:**
 
-AWS Lambda was employed by us to establish a scalable and cost-effective backend, with serverless functions designed to fetch event data responsively.
+AWS Lambda was employed to establish a scalable and cost-effective backend. Serverless functions were designed to fetch event data responsively.
 
-#### Why serverless functions?
+#### Why a serverless function?
 
 Serverless: No backend maintenance, easy to scale, always available, no cost for idle time.
 
 {% include stacks-code.html %}
 
-Feel you free to have a look to source code {% include source-code.html %}.
+Feel free to look at the source code in the {% include source-code.html %}.
 
-### Below is an overview of key functionalities and page views available in the Meet application:
+### Key Functionalities and Page Views:
 
 {% include image-gallery.html %}
 
-
-
 ##### Retrospective
-The completion of the Meet project demonstrated the potential of serverless architecture, PWA, and SPA design. The TDD approach ensured the reliability of the code, resulting in a platform that effectively combined user-centric design with advanced technology.
-{:.blockquote .mb__3}
-<div class="row">
 
- <div class="col__3 r-card danger">
-   <h6> What didn't go well? </h6>
-    <p>
-  The biggest challenge was integrating Google's authorization and adhering to their privacy policy, which was essential for allowing user logins to the application.   
-   </p>
- </div>
+Completing the Meet project demonstrated the potential of serverless architecture and PWA and SPA design. The TDD approach ensured the reliability of the code, resulting in a platform that effectively combined user-centric design with advanced technology..
+{:.blockquote .mb__3 .mt__3}
 
- <div class="col__3 r-card success">
- <h6> What went well? </h6>
-   <p>
- The integration of the API calendar, OAuth, and AWS serverless was achieved successfully, thanks to the extensive documentation provided for each technology. This allowed for a seamless connection between the application and the necessary services for user authentication and event management.
-   </p>
-</div>
-
- <div class="col__3 r-card warning">
- <h6>Future Steps</h6>
- <p>
-  expanding the platform's capabilities to fetch events from various providers and organizers, broadening the scope of accessible activities for users.
-  </p>
-</div>
-
-<div class="col__3 r-card info">
- <h6>Final Thoughts</h6>
-   <p>
-  I'm quite proud of myself for successfully building such a complex application with modern technologies and learning how web applications perform behind the scenes, especially in terms of SPA design and data visualization.
-   </p>
-</div>
-</div>
-
+{% include retrospective-cards.html %}

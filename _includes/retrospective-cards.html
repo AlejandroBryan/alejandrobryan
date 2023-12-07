@@ -1,0 +1,12 @@
+<div class="row">
+  {% for card in page.card-info %}
+  <div class="col__6 col__md__6">
+    <div class="card rounded text__center {{card.style}}">
+      <div class="card__body">
+        <h5 class="card__title">{{ card.title }}</h5>
+        <p class="card__text">{{card.words}}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -15,31 +15,47 @@
   }
 }
 
+.btn__xl {
+  @include button-display;
+
+  padding: .7em 2em;
+  font-weight: $font-large;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  border: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .btn__icons{
   @include button-display;
 }
 
 .large{
-  padding: 1em 3em;
+  padding: .7em 3em;
 }
 
 .text__link {
+  margin: 2px;
   @include button-display;
-
   display: inline;
   width: fit-content;
-  border-bottom: 1px solid #0e0d0dad;
- 
+  color: $secondary__color;
+  border-bottom: 1px solid $secondary__color;
 }
 
 .primary {
-  color: $white-color;
-  background-color: $primary-color;
+  color: $white__color;
+  background-color: $primary__color;
 }
 
 .secondary {
-  color: $white-color;
-  background-color: $secondary-color;
+  color: $white__color;
+  background-color: $secondary__color;
 }
 
 .w-100{

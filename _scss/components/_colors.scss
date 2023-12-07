@@ -1,4 +1,5 @@
 .danger {
+<<<<<<< HEAD
    background-color: $danger;
 }
 .text__secondary {
@@ -146,4 +147,155 @@
 
 .puppeteer {
    background-color: $puppeteer;
+=======
+  background-color: $danger;
+}
+
+.success {
+  background-color: $success;
+}
+
+.warning {
+  background-color: $warning;
+}
+
+.info {
+  background-color: $info;
+}
+//============================ text__colors =============================
+.text__success {
+  color: $success;
+}
+.text__info {
+  color: $info;
+}
+.text__danger {
+  color: $danger;
+}
+.text__secondary {
+  color: $secondary__color;
+}
+.html5 {
+  outline: 2px solid $html5;
+}
+
+.sass {
+  outline: 2px solid $sass;
+}
+
+.css3 {
+  outline: 2px solid $css3;
+}
+
+.javascript {
+  outline: 2px solid $javascript;
+}
+
+.jquery {
+  outline: 2px solid $jquery;
+}
+
+.ruby {
+  outline: 2px solid $ruby;
+}
+
+.bootstrap {
+  outline: 2px solid $bootstrap;
+}
+
+.jekyll {
+  outline: 2px solid $jekyll;
+}
+
+.babel {
+  outline: 2px solid $babel;
+}
+
+.webpack {
+  outline: 2px solid $webpack;
+}
+
+.eslint {
+  outline: 2px solid #6358d4;
+}
+
+.npm {
+  outline: 2px solid $npm;
+}
+
+.prettier {
+  outline: 2px solid $prettier;
+}
+
+.react {
+  outline: 2px solid $react;
+}
+
+.angular {
+  outline: 2px solid $angular;
+}
+
+.heroku {
+  outline: 2px solid $heroku;
+}
+
+.mongodb {
+  outline: 2px solid $mongodb;
+}
+
+.node {
+  outline: 2px solid $node;
+}
+
+.jwt {
+  outline: 2px solid $jwt;
+}
+
+.aws {
+  outline: 2px solid $aws;
+}
+
+.postgressql {
+  outline: 2px solid $postgresql;
+}
+
+.express {
+  outline: 2px solid $express;
+}
+
+.markdown {
+  outline: 2px solid $markdown;
+}
+
+.figma {
+  outline: 2px solid $figma;
+}
+
+.postman {
+  outline: 2px solid $postman;
+}
+
+.parcel {
+  outline: 2px solid $parcel;
+}
+
+.jest-cucumber {
+  outline: 2px solid $jest-cucumber;
+}
+
+.gh-pages {
+  outline: 2px solid $gh-pages;
+}
+
+.recharts {
+  outline: 2px solid $recharts;
+}
+
+.momentjs {
+  outline: 2px solid $momentjs;
+}
+
+.puppeteer {
+  outline: 2px solid $puppeteer;
+>>>>>>> 9b4d14a2f0b3165e3ed3c25acc6018daf42a4190
 }

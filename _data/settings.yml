@@ -2,13 +2,40 @@
 # Projects Section
 
 projects:
-- {name: 'portfolio',   url: 'portfolio'}
-- {name: 'pokedex',   url: 'pokedex'}
-- {name: 'my-flixx',   url: 'my-flixx'}
-- {name: 'my-flixx-client',   url: 'my-flixx-client'}
-- {name: 'meet',   url: 'meet'}
-- {name: 'chat-app',   url: 'chat-app'}
-- {name: 'my-flixx-client-angular',   url: 'my-flixx-client-angular'}
+#- {name: 'portfolio',   url: 'portfolio'}
+- {
+  name: 'pokedex',
+  url: 'pokedex',
+  description: 'The Pokedex project is a captivating web application that combines the allure of the Pokémon universe with advanced frontend development techniques. Utilizing HTML, Sass, and Bootstrap, it features a visually stunning and responsive interface. The application enriches user experience by seamlessly integrating with the PokeApi to provide real-time data on various Pokémon species. Enhanced with engaging DOM animations and optimized with Webpack and Babel, the Pokedex offers an immersive journey through the world of Pokémon, showcasing both technical proficiency and creative design.'
+  
+  }
+- {
+  name: 'my-flixx',
+  url: 'my-flixx',
+  description: '"My-flixx" is a web application designed to offer movie enthusiasts a comprehensive platform for accessing information about movies, directors, and genres. Developed as a server-side component using the MERN stack, it allows users to register, manage their profiles, and curate favorite movie lists. The project showcases full-stack JavaScript development skills, including creating a REST API, interfacing with a MongoDB database, and implementing user authentication and data security.' 
+  }
+- {
+  name: 'my-flixx-client',
+  url: 'my-flixx-client',
+  description: 'The my-flixx-client application is a responsive, single-page web app developed using React. It serves as the user interface for the My-flixx movie database, allowing users to access detailed information about movies, directors, and genres. The app features a sleek design with functionalities like movie search, user registration, profile management, and the ability to create a list of favorite movies. Built as part of a full-stack JavaScript development course, the My-flixx client-side project showcases advanced skills in React, state routing, and responsive design, providing a seamless and engaging user experience.'
+  
+  }
+- {
+  name: 'meet',
+  url: 'meet',
+  description: 'A progressive web application facilitating easy discovery and engagement with local tech events and professional networking opportunities. Built using React and a test-driven development approach, this single-page application integrates with the Google Calendar API to provide real-time event information. Developed as part of a web development course at CareerFoundry, "Meet" exemplifies advanced skills in web development, showcasing the ability to create a functional, user-centric web application.
+'
+  }
+- {
+  name: 'chat-app', 
+  url: 'chat-app',
+  description: 'The Chat App is a mobile communication application developed using React Native, designed to connect users through text, image sharing, and location sharing. It showcases modern technologies like React Native, Expo, and Google Firestore Database. The app features a customizable chat interface, offline message access, and seamless integration with the device’s camera and location services. This project highlights cross-platform mobile app development skills and addresses the growing trend of mobile-first technology solutions.'
+  }
+- {
+  name: 'my-flixx-client-angular',   
+  url: 'my-flixx-client-angular',
+  description: 'The My-flixx Angular application is a responsive, single-page web app designed to complement the existing My-flixx server-side code. It offers an engaging platform for movie enthusiasts to access detailed information about movies, directors, and genres. Developed with Angular and Angular Material, the app features user-friendly registration and login forms, along with multiple interface views for an enhanced user experience. This project not only showcases Angular development skills but also emphasizes the importance of clear documentation and effective collaboration in modern web development.'
+  }
 
 
 
@@ -19,11 +46,11 @@ menu:
 - {name: 'Home', url: ''}
 - {name: 'About',    url: 'about'}
 - {name: 'Projects', url: 'projects'}
+- {name: 'Resume', url: 'resume'}
 - {name: 'Blog',     url: 'blog'}
 - {name: 'Contact',  url: 'contact'}
 
-      
-    
+
      
 
     

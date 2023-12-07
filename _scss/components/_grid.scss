@@ -8,91 +8,14 @@
    overflow: auto;
 }
 
-.card {
-   flex-basis: 100%;
-}
-
-.r-card {
-   padding: 10px;
-   text-align: center;
-
-   h6 {
-      font-size: 26px;
-      font-weight: 700;
-   }
-
-}
-
-/* ======== GRID ========== */
-
-@supports (display: grid) {
-   .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 20px;
-      margin: 0;
-
-      .card__body {
-         position: absolute;
-         inset: 75px 0 0;
-         padding: 10px;
-         color: $white-color;
-
-         p {
-            color: $white-color;
-         }
-      }
-
-      .grid__item {
-         position: relative;
-         display: flex;
-         width: auto;
-         height: 350px;
-         margin: 0;
-         overflow: hidden;
-         background-color: #eeeaeaea;
-
-         .card__title {
-            position: absolute;
-            top: 10px;
-            left: 0;
-            z-index: 2;
-            align-self: flex-start;
-            padding: 0.5rem;
-            font-size: 2rem;
-            font-weight: 600;
-            line-height: 1;
-            color: #ffffffe6;
-         }
-      }
-
-      .card__thumbnail {
-         position: relative;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         width: 100%;
-         height: 100%;
-         margin: 0;
-         overflow: hidden;
-
-         img {
-            height: 100%;
-         }
-
-         &:last-child {
-            grid-row: auto / auto;
-            grid-column: auto / auto;
-         }
-      }
-   }
-}
-
 /* ======== FLEXBOX ========== */
 
 .row {
    display: flex;
    flex-direction: column;
+   padding: 1em 10px;
+}
+.justify__center {
    justify-content: center;
 }
 
@@ -104,47 +27,96 @@
    border-radius: 5px;
 }
 
+.d__column{
+flex-direction: column;
+}
+
+
+/* ======== GRID ========== */
+
+@supports (display: grid) {
+   .grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      margin: 0;
+
+      .grid__item {
+         position: relative;
+         display: flex;
+         width: auto;
+         height: 100%;
+         margin: 0;
+         overflow: auto;
+         background-color: $primary__color;
+
+         .card__title {
+            z-index: 2;
+            align-self: flex-start;
+            padding: 0.5rem;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1;
+            color: #ffffffe6;
+         }
+      }
+
+      .overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         right: 0;
+         margin: 0;
+         overflow: hidden;
+         z-index: 1;
+
+         &:last-child {
+            grid-row: auto / auto;
+            grid-column: auto / auto;
+         }
+      }
+   }
+}
 /* ====================  BREAK POINTS =================== */
 
 @media all and (min-width: $md) {
    .grid {
       grid-template-columns: 1fr 1fr;
-
-      .card__body {
-         position: absolute;
-         inset: 100px 0 0;
-         padding: 10px;
-         color: $white-color;
-      }
    }
 }
 
-@media all and (min-width: $xl) {
-   .grid {
-      grid-template-columns: 1fr 1fr 1fr;
-   }
-}
+
 
 @media (min-width: $xl) {
    .container {
       display: block;
-      width: 70%;
+      width: 75%;
       padding: 0;
       margin: 2em auto;
    }
-
-   .row {
-      flex-direction: row;
-   }
+  
 
    [class^='col'] {
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       margin-top: 0;
+      align-items: center;
    }
 
    [class^='col'] + [class^='col'] {
       margin-left: 10px;
+   }
+   .col__md__6 {
+      flex-basis: 50%;
+   }
+}
+
+
+@media (min-width: $xl) {
+   .row {
+      flex-direction: row;
    }
 
    .col__1 {
@@ -200,3 +172,5 @@
       height: 600px;
    }
 }
+
+

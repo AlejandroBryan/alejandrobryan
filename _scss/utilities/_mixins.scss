@@ -14,7 +14,7 @@
 
 @mixin label-animation-effect {
   &:hover {
-    color: $primary-color;
+    color: $primary__color;
     opacity: 0.5;
   }
 }

@@ -81,7 +81,7 @@
 
   width: 20px;
   padding: 5px;
-  color: $white-color;
+  color: $white__color;
   background-color: #19539eda;
 }
 
@@ -112,6 +112,31 @@
 
 .text__start {
   text-align: left;
+}
+.text__white{
+  color: white;
+}
+
+.text__primary {
+  color: $primary__color;
+}
+/* Style for the loading spinner */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 /******  media queries  *****/

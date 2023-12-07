@@ -1,27 +1,29 @@
+//============= sections =================
+
 .section {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-   .section__heading {
-      align-self: start;
-   }
+  .section__heading {
+    align-self: start;
+  }
 
-   .section__body {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+  .section__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
-      > span {
-        flex: 50%;
-      }
-   }
+    > span {
+      flex: 50%;
+    }
+  }
 }
 
 @media (min-width: $md) {
-    .section__body {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-     }
+  .section__body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
 }

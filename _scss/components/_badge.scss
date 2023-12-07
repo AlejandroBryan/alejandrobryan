@@ -1,23 +1,21 @@
 .badge {
    position: relative;
-   display: inline-block;
-   width: 120px;
-   height: 120px;
-   padding: 12px 14px;
-   margin: 6px;
-   font-size: 16px;
+   display: block;
+   padding: 4px 10px;
+   font-size: 12px;
    font-weight: 900;
    color: #111111fa;
    text-align: center;
+<<<<<<< HEAD
    text-shadow: .8px 0  #404040f5;
+=======
+   margin-bottom: 10px;
+>>>>>>> 9b4d14a2f0b3165e3ed3c25acc6018daf42a4190
    text-transform: uppercase;
    letter-spacing: .3px;
-   border-radius: $circle;
-
-   span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+   border-radius: $rounded;
+   &:hover{
+      opacity: .7;
+      background: url("../../assets/images/stroke_bg.svg") no-repeat left / contain;
    }
 }
