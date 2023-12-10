@@ -173,4 +173,11 @@ flex-direction: column;
    }
 }
 
-
+@media (max-width: $xl) {
+.text__xs__center{
+   text-align: center;
+}
+.align__self__center{
+   align-self: center;
+}
+}

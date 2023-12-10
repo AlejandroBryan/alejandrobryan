@@ -25,7 +25,7 @@ card-info:
       words: 'Future enhancements include expanding the database to include more diverse movie genres and incorporating additional user features like movie ratings and reviews'
     - title: final thoughts
       style: 'info'
-      words: 'Building the server-side of My-flixx was an enriching experience that solidified full-stack development skills, particularly in creating and managing APIs and databases.
+      words: 'Building the server-side of My-flixx was an enriching experience that solidified full-stack development skills, particularly in creating and managing APIs and databases.'
 ---
 
 {% 
