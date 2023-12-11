@@ -20,11 +20,9 @@
 title: Alejandro Bryan
 email: alejandrobryan023@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ Junior Full Stack Web Developer based in southern Germany, currently advancing skills through CareerFoundry's full-stack web development course. Proficient in HTML, CSS, JavaScript, and diverse web technologies. Excited to collaborate with experienced developers, foster learning, and contribute to the web development landscape.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "alejandrobryan.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://alejandrobryan.com" # the base hostname & protocol for your site, e.g. http://example.com
 github: https://github.com/AlejandroBryan
 twitter_username: AlejandroBryan0
 github_username:  AlejandroBryan

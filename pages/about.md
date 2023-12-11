@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /about
-
+image: 
 frontend:
    - html5
    - css3
