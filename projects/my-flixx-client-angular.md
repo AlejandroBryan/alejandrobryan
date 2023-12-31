@@ -1,9 +1,12 @@
 ---
 layout: post
 title: 'My-flixx-client-angular'
+github-name: my-flixx-client-angular
+source-code: 'https://github.com/AlejandroBryan/my-flixx-client-angular'
 stacks:
   - html5
   - javascript
+  - typescript
   - angular
   - parcel
   - sass
@@ -38,6 +41,9 @@ The primary goal was to develop a user-friendly client-side application for My-f
 **Client-Side Development:**
 
 The application was developed using Angular (version 9 or later), with Angular Material for design. It features user registration and login forms, and a variety of interface views for displaying movie information.
+
+{% include stacks-code.html %}
+Feel free to look at the source code in the {% include source-code.html %}.
 
 #### Key Functionalities and Views:
 

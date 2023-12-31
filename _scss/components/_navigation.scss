@@ -17,16 +17,16 @@
   width: $full-width;
   margin-top: 4em; 
   list-style-type: none;
-  background-color: #fdfdfd;
+  background-color: #ebeaea;
   border-radius: $rounded;
-  padding: 12px 0;
+ 
  
 
   .nav__link {
     display: none;
     width: $full-width;
     padding: 12px 6px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-decoration: none;
     list-style: none;
     transition: all 0.7s;
@@ -59,10 +59,10 @@
       border-bottom: 3px $primary__color solid;
     }
 
-    // &:active {
-    //   color: $secondary__color;
-    //   background:rgba(54, 96, 211, 0.93) url("../../assets/images/stroke_bg.svg") no-repeat center / fill;
-    // }
+    &:active {
+      color: $secondary__color;
+      background:rgba(54, 96, 211, 0.93) url("../../assets/images/stroke_bg.svg") no-repeat center / fill;
+    }
   }
 }
 
@@ -168,6 +168,7 @@
 
   .nav {
     display: flex;
+    overflow: hidden;
 
     .brand__item {
       top: 3px;
@@ -179,6 +180,7 @@
   }
 
   .navbar {
+    padding: 12px 0;
     flex-direction: row !important;
     width: auto;
     margin-top: 16px;
@@ -191,7 +193,7 @@
       padding: 0;
 
       .item {
-        padding: 6px;
+        padding: 0 6px;
         text-align: center;
         &:hover {
           color: $white__color;

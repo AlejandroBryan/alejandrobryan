@@ -40,6 +40,9 @@ gallery:
   - image_path: /assets/images/projects/my-flixx-client/gallery/movie-details-view.png
     image_path_thumbnail: /assets/images/projects/my-flixx-client/thumbnails/movie-details-view.png 
     title: 'Single Movie view for detailed movie information and adding movies to favorites'
+  - image_path: /assets/images/projects/my-flixx-client/gallery/movie-details-view.png
+    image_path_thumbnail: /assets/images/projects/my-flixx-client/thumbnails/movie-details-view.png 
+    title: 'Single Movie view for detailed movie information and adding movies to favorites'
   - image_path: /assets/images/projects/my-flixx-client/gallery/login-view.png
     image_path_thumbnail: /assets/images/projects/my-flixx-client/thumbnails/login-view.png
     title: 'Login view for user authentication.'
@@ -80,6 +83,6 @@ Feel free to look at the source code in the {% include source-code.html %}.
 ##### Retrospective
 
 Developing the My-flixx client-side application highlighted the importance of a seamless user interface in accessing server-side data. Challenges included ensuring responsive design and integrating various API endpoints efficiently.
-{:.blockquote .mb**3 .mt**3}
+{:.blockquote .mb__3 .mt__3}
 
 {% include retrospective-cards.html %}

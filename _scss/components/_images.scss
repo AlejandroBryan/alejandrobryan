@@ -1,8 +1,8 @@
 /* ====================== IMAGES ========================== */
 .lightbox-container img {
-   max-width: 100%; /* Ensure images don't exceed the container width */
-   max-height: 100%; /* Ensure images don't exceed the container height */
- }
+  max-width: 100%; /* Ensure images don't exceed the container width */
+  max-height: 100%; /* Ensure images don't exceed the container height */
+}
 svg,
 img {
   width: 100%;
@@ -69,6 +69,8 @@ img {
   font-size: 1.6em;
 }
 
+
+
 .gallery {
   display: grid;
   gap: 10px;
@@ -83,14 +85,12 @@ img {
     margin: 0;
 
     img {
-      border-radius: 12px;
-      box-shadow: 4px 4px 3px 2px #294c9256;
+      box-shadow: 0 4px 0 3px #0d0d0d51;
       object-fit: cover;
     }
     &:hover {
       .overlay {
         opacity: 1;
-
       }
     }
 
@@ -98,10 +98,10 @@ img {
       position: absolute;
       inset: 0;
       width: $full-width;
-      height: 100%;
+      height: auto;
       background-color: #d8cfcf93;
       opacity: 0;
-      border-radius: $rounded;
+      border-radius: inherit;
     }
 
     .overlay-icon {
@@ -118,46 +118,29 @@ img {
 
 //========================= resume-svg =========================
 
-.resume__svg{
+.resume__svg {
   height: 32px;
   width: 62px;
 }
 
 //========================= figcaption =========================
-figcaption{
+figcaption {
   font-size: 20px;
   text-align: center;
 }
 //========================= lightbox =========================
-.lb-data .lb-caption {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1em;
-}
-
-.lb-data .lb-number {
-  display: block;
-  padding-bottom: 1em;
-  margin-top: 10px;
-  clear: left;
-  font-size: 16px;
-  color: #999;
-}
-
-.lightboxOverlay {
-  background-color: #000;
-  opacity: 0.9;
+.sl-wrapper .sl-image .sl-caption {
+  font-size: 0.8rem;
 }
 
 .sl-wrapper {
-   background-color: #3636368a;
+  background-color: #3636368a;
 }
 
-.stroke__bg{
+.stroke__bg {
   padding: 12px 0;
   color: $primary__color;
-  background: url("../../assets/images/stroke.svg") no-repeat left / contain;
-
+  background: url('../../assets/images/stroke.svg') no-repeat left / contain;
 }
 
 @media (min-width: $md) {
@@ -174,37 +157,90 @@ figcaption{
   }
 
   .gallery {
+    position: relative;
     grid-template-rows: masonry;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
     outline: invert;
+    background-color: #3f79f59c;
   }
 
   .gallery > a {
     display: grid;
-    grid-template-rows: 1fr auto;
+    //grid-template-rows: 1fr auto;
+    grid-template-rows: auto;
     margin: 0;
-   
+
     &:first-child {
-      grid-row: span 2;
       grid-column: span 2;
+      border-radius:10px;
+      img{
+        border-radius: inherit;
+        
+      }
     }
 
     &:nth-child(2) {
       grid-column: span 2;
+      border-radius:20px;
+      img{
+        border-radius: inherit;
+        
+      }
+      
     }
 
     &:nth-child(3) {
-      grid-column: span 2;
+      border-radius:20px ;
+      img{
+        border-radius: inherit;   
+      }
     }
 
+
+    &:nth-child(4) {
+      border-radius:20px ;
+      img{
+        border-radius: inherit;   
+      }
+    }
+
+
+
+
     &:nth-child(5) {
-      grid-column: span 2;
+      border-radius: 10%;
+      img{
+        border-radius: inherit;
+        
+      }
+    }
+
+
+    &:nth-child(6) {
+      border-radius: 10px;
+      img{
+        border-radius: inherit;
+        
+      }
     }
 
     &:nth-child(7) {
       grid-column: span 2;
+      border-radius:10px;
+      img{
+        border-radius: inherit;
+        
+      }
+    }
+    &:nth-child(8) {
+      grid-column: span 2;
+      border-radius:10px;
+      img{
+        border-radius: inherit;
+        
+      }
     }
   }
 }

@@ -28,6 +28,7 @@ twitter_username: AlejandroBryan0
 github_username:  AlejandroBryan
 
 sass:
+  style: compressed
   sass_dir: _scss
 # Build settings
 markdown: kramdown

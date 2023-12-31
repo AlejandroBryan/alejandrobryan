@@ -7,11 +7,14 @@ export default class Lightbox {
     this.events();
   }
   events() {
-    const lightbox = new SimpleLightbox('.gallery a', {
+    let options = {
+      maxWidth: screen.width > 600 ? 800 : screen.width, 
+      maxHeight: screen.height > 600 ? 600 : screen.height,
       captions: true,
       loadingCaption: 'Loading...',
       spinner: true
-    });
+    };
+    const lightbox = new SimpleLightbox('.gallery a', options);
     
   }
 }
