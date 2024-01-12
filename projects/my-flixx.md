@@ -29,7 +29,7 @@ card-info:
 ---
 
 {% 
-include image.html url="https://myflixx.herokuapp.com/" image="/projects/my-flixx/my-flixx.png" %}
+include image.html url="https://myflixx.onrender.com/" image="/projects/my-flixx/my-flixx.png" %}
 
 ## Overview
 
