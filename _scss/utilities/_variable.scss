@@ -1,5 +1,5 @@
 // ======== Color ========= //
-$primary__color: #0b0a0aea;
+$primary__color: #2c2b2b;
 $secondary__color: #3660d3ec;
 $white__color: #fff;
 $danger: #e07730c4;
@@ -9,8 +9,9 @@ $warning: #f1e25cd7;
 
 // ======== Helpers ========= //
 $rounded: 6px;
-$rounded-m: 12px;
-$rounded-l: 36px;
+$rounded__md: 12px;
+$rounded__lx: 36px;
+$rounded__left: 6px 0 0 6px;
 $circle: 50%;
 
 // ======== Fonts ========= //

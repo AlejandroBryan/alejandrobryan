@@ -1,5 +1,5 @@
 <section>
-  <div class="grid">
+  <!-- <div class="grid">
     {% for project in site.data.settings.projects %}
 
     <div class="card grid__item rounded">
@@ -15,5 +15,29 @@
       </div>
     </div>
     {% endfor %}
+  </div> -->
+
+  {% for project in site.data.settings.projects %}
+  <div class="card border__card  rounded mb__5">
+    <div class="row p0">
+      <div class="col__6 m__0 p0">
+        <figure>
+          <img class="rounded__left" src="{{site.github.url}}/assets/images/projects/{{project.url}}/thumbnail.png" alt="" />
+        </figure>
+      </div>
+      <div class="col__6 p0">
+        <div class="card">
+          <div class="card__body">
+            <p>{{project.description}}</p>
+            <div>
+              <a href="{{ project.url }}" class="btn primary rounded">Discover More</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
   </div>
+  {% endfor %}
 </section>
+

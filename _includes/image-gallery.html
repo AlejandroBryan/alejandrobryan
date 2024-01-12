@@ -1,27 +1,17 @@
 <div class="gallery mt__3 mb__4">
-   {% for image in page.gallery %}
-      <a
-         href="{{ image.image_path }}"
-         class="thumbnail"
-         title="{{ image.title }}"
-      >
-         <img
-            src="{{ image.image_path_thumbnail }}"  
-            alt="{{ image.title }}"
-            title="{{ image.title }}"
-         />
+  {% for image in page.gallery %}
+  <a href="{{ image.image_path }}" class="thumbnail" title="{{ image.title }}">
+    <img src="{{ image.image_path_thumbnail }}" alt="{{ image.title }}" title="{{ image.title }}" />
 
-          <div class="overlay">
-            <div class="overlay-icon">
-               {% if include.text %} {{ include.text }}
-               <i class="fas fa-plus" aria-hidden="true"></i> {% else %} 
-             <i class="fas fa-plus" aria-hidden="true"></i>
-               {% endif %}
-            </div>
-         </div> 
-      </a>
-       
-   {% endfor %}
-  
+    <div class="overlay">
+      <div class="overlay-icon">
+        {% if include.text %} {{ include.text }}
+        <i class="fas fa-plus" aria-hidden="true"></i> {% else %}
+        <i class="fas fa-plus" aria-hidden="true"></i>
+        {% endif %}
+      </div>
+    </div>
+  </a>
+
+  {% endfor %}
 </div>
-

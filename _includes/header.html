@@ -12,10 +12,7 @@
     <meta name="author" content="Alejandro Bryan" />
     <meta name="publisher" content="Alejandro Bryan" />
     <meta name="copyright" content="Alejandro Bryan" />
-    <meta
-      name="description"
-      content="{{site.description}}"
-    />
+    <meta name="description" content="{{site.description}}" />
     <meta name="page-topic" content="Media" />
     <meta name="page-type" content="Blogging" />
     <meta name="audience" content="Everyone" />
@@ -31,7 +28,17 @@
     />
     <link rel="stylesheet" href="/assets/css/simple-lightbox.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    /></noscript>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> -->
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
 

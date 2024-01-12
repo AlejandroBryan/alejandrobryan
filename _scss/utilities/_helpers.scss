@@ -1,7 +1,9 @@
 /* ====================== SPACING ========================== */
 
 /* =============== MARGINS ================= */
-
+.m__0{
+  margin: 0 !important;
+}
 .mb__1 {
   margin-bottom: 0.8em;
 }
@@ -16,6 +18,9 @@
 
 .mb__4 {
   margin-bottom: 1.9em;
+}
+.mb__5 {
+  margin-bottom: 2.3em;
 }
 
 .mt__1 {
@@ -43,7 +48,9 @@
 }
 
 /* =============== PADDINGS ================= */
-
+.p0{
+  padding: 0 !important;
+}
 .pb-1 {
   margin-bottom: 0.8em;
 }
@@ -89,18 +96,21 @@
   border-radius: $rounded;
 }
 
-.rounded-m {
-  border-radius: $rounded-m;
+.rounded__md {
+  border-radius: $rounded__md;
 }
 
-.rounded-l {
-  border-radius: $rounded-l;
+.rounded__lx {
+  border-radius: $rounded__lx;
+}
+
+.rounded__left {
+  border-radius: $rounded__left;
 }
 
 .circle {
   border-radius: $circle;
 }
-
 
 .text__center {
   text-align: center;
@@ -113,7 +123,7 @@
 .text__start {
   text-align: left;
 }
-.text__white{
+.text__white {
   color: white;
 }
 
@@ -135,8 +145,12 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /******  media queries  *****/
